@@ -1,21 +1,15 @@
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/embedded_styles.css">
-</head>
-<storecategories>
-    <div class="boxtitle">Store Categories</div>
-    <div id="categories">
-        <div class="boxlinks">
-            {%- for category in categories %}
-            <a href="{{ category['link'] }}" target="_top">{{ category['name'] }}</a>
-            {%- if category['sub'] != None %}
-            <div class="sub-cat">
-            {%- for sub in category['sub'] %}
-                <a href="{{ sub['link'] }}">{{ sub['name'] }}</a>
-            {%- endfor %}
-            </div>
-            {%- endif %}
-            {%- endfor %}
+<div class="boxtitle">Store Categories</div>
+<div id="categories">
+    <div class="boxlinks">
+        {%- for category in categories %}
+        <a href="{{ category['link'] }}" target="_top">{{ category['name'] }}</a>
+        {%- if category['sub'] != None %}
+        <div class="sub-cat">
+        {%- for sub in category['sub'] %}
+            <a href="{{ sub['link'] }}">{{ sub['name'] }}</a>
+        {%- endfor %}
         </div>
+        {%- endif %}
+        {%- endfor %}
     </div>
-</storecategories>
+</div>

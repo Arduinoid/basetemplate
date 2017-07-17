@@ -171,7 +171,7 @@ input {
 /* Side Bar Styles */
 /*******************/
 
-storecategories .boxtitle {
+.boxtitle {
     background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
     color: #fff;
     height: 30px;
