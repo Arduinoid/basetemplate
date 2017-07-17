@@ -1,0 +1,273 @@
+#head {
+    height: 100px;
+}
+
+#main-box {
+    border-left: solid lightgrey 5px;
+}
+
+.accent-color {
+    background: {{ colors.primary }};
+    border: solid darkgrey 1px;
+}
+
+.fill-height {
+    height: 100%;
+}
+
+.center-height {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+/*************/
+/* TAB STYLE */
+/*************/
+
+input {
+    display: none;
+}
+
+#terms1,
+#terms2,
+#terms3,
+#terms4 {
+    display: none;
+}
+
+.tab-content {
+    display: block;
+}
+
+#shipping-tab+label {
+    display: inline-block;
+    height: 33px;
+    width: 100%;
+    background-color: {{ colors.secondary }};
+}
+
+#shipping-tab:checked+label {
+    background-color: {{ colors.primary }};
+}
+
+#terms-tab+label {
+    display: inline-block;
+    height: 33px;
+    width: 100%;
+    background-color: {{ colors.secondary }};
+}
+
+#terms-tab:checked+label {
+    background-color: {{ colors.primary }};
+}
+
+#payment-tab+label {
+    display: inline-block;
+    height: 33px;
+    width: 100%;
+    background-color: {{ colors.secondary }};
+}
+
+#payment-tab:checked+label {
+    background-color: {{ colors.primary }};
+}
+
+#about-tab+label {
+    display: inline-block;
+    height: 33px;
+    width: 100%;
+    background-color: {{ colors.secondary }};
+}
+
+#about-tab:checked+label {
+    background-color: {{ colors.primary }};
+}
+
+#shipping-tab:checked~.tab-content#terms1,
+#terms-tab:checked~.tab-content#terms2,
+#payment-tab:checked~.tab-content#terms3,
+#about-tab:checked~.tab-content#terms4 {
+    display: inline-block;
+}
+
+.other-stuff {
+    font-size: 2em;
+}
+
+/***********************/
+/* Right header styles */
+/***********************/
+#call {
+    background: url('https://s3.amazonaws.com/savemyserver/SPF/images/shared_linkover.png');
+    float: right;
+    clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+    /*   padding: 10px 40px 0px 5px; */
+    text-align: right;
+    height: 40px;
+    width: 100%;
+    /*   display: inline-block; */
+}
+#call p {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+    margin: 8px 27px;
+}
+#greeting {
+    float: right;
+    letter-spacing: 0.02px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#payment {
+    /*   display: inline-block; */
+    /*   text-align: right; */
+    float: right;
+    clear: right;
+}
+.small-card {
+    background: url('https://s3.amazonaws.com/savemyserver/SPF/images/cards.jpg');
+    background-size: 150px;
+    display: inline-block;
+    height: 29px;
+    width: 45px;
+    /*   border: solid; */
+}
+
+#paypal {
+    /*  this is mostly taken care of by the .small-card class  */
+}
+
+#visa {
+    background-position: 0px -37px;
+}
+
+#master-card {
+    background-position: 0px -73px;
+}
+
+#citrus {
+    background-position: -105px -1px;
+}
+
+#maestro {
+    background-position: -53px -73px;
+}
+
+/**********************/
+/* Header line styles */
+/**********************/
+
+#header-line {
+    height: 5px;
+    clear: both;
+}
+
+/*******************/
+/* Side Bar Styles */
+/*******************/
+
+storecategories .boxtitle {
+    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
+    color: #fff;
+    height: 30px;
+    padding: 1px 10px;
+}
+
+.sub-cat {
+    padding-left: 8px;
+    font-size: 0.9em;
+}
+
+.sub-cat>a:before {
+    content: "";
+    margin: 0px 8px 4px 0px;
+    height: 2px;
+    width: 4px;
+    background: #555;
+    display: inline-block;
+}
+
+ul.categories,
+.boxlinks {
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+ul.categories ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+ul.categories li {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+ul.categories li a,
+.boxlinks a {
+    text-align: left;
+    padding: 5px;
+    background: none;
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    color: #686666;
+    text-decoration: none;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+ul.categories li a:hover,
+.boxlinks a:hover {
+    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linkover.png");
+    color: #fff;
+    border-top: none;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+ul.categories li:first-child,
+.boxlinks:first-child {
+    border-top: none;
+}
+
+ul.categories li:first-child:hover,
+.boxlinks:first-child:hover {
+    border-top: none;
+}
+
+#categories .boxtitle,
+#helpful_links,
+.categories .boxtitle,
+.categories h2.boxtitle,
+.pages .boxtitle {
+    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
+    color: #fff;
+    height: 30px;
+    padding: 1px 10px;
+}
+
+#categories a:after {
+    color: #686666;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#categories a:hover:after {
+    color: #fff;
+}
+
+#categories .boxtitle {
+    display: none;
+}

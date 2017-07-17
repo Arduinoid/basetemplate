@@ -1,0 +1,60 @@
+#categories a:nth-child(1) { display: block; }
+#categories a:nth-child(1):before { content: "Server - Hard Drives"; }
+#categories a:nth-child(1):after { content: ""; }
+#categories a:nth-child(2) { display: block; }
+#categories a:nth-child(2):before { content: "Server - Memory"; }
+#categories a:nth-child(2):after { content: ""; }
+#categories a:nth-child(3) { display: block; }
+#categories a:nth-child(3):before { content: "Server - Processors"; }
+#categories a:nth-child(3):after { content: ""; }
+#categories a:nth-child(4) { display: block; }
+#categories a:nth-child(4):before { content: "Dell Server Parts"; }
+#categories a:nth-child(4):after { content: ""; }
+#categories a:nth-child(5) { display: block; }
+#categories a:nth-child(5):before { content: "HP Server Parts"; }
+#categories a:nth-child(5):after { content: ""; }
+#categories a:nth-child(6) { display: block; }
+#categories a:nth-child(6):before { content: "Accessories"; }
+#categories a:nth-child(6):after { content: ""; }
+#categories a:nth-child(7) { display: block; }
+#categories a:nth-child(7):before { content: "Backplanes"; }
+#categories a:nth-child(7):after { content: ""; }
+#categories a:nth-child(8) { display: block; }
+#categories a:nth-child(8):before { content: "Batteries"; }
+#categories a:nth-child(8):after { content: ""; }
+#categories a:nth-child(9) { display: block; }
+#categories a:nth-child(9):before { content: "Cards and Controllers"; }
+#categories a:nth-child(9):after { content: ""; }
+#categories a:nth-child(10) { display: block; }
+#categories a:nth-child(10):before { content: "Disk Array Components"; }
+#categories a:nth-child(10):after { content: ""; }
+#categories a:nth-child(11) { display: block; }
+#categories a:nth-child(11):before { content: "Heatsinks and Cooling"; }
+#categories a:nth-child(11):after { content: ""; }
+#categories a:nth-child(12) { display: block; }
+#categories a:nth-child(12):before { content: "Motherboard"; }
+#categories a:nth-child(12):after { content: ""; }
+#categories a:nth-child(13) { display: block; }
+#categories a:nth-child(13):before { content: "Optical Drives"; }
+#categories a:nth-child(13):after { content: ""; }
+#categories a:nth-child(14) { display: block; }
+#categories a:nth-child(14):before { content: "Power Cords and PDUs"; }
+#categories a:nth-child(14):after { content: ""; }
+#categories a:nth-child(15) { display: block; }
+#categories a:nth-child(15):before { content: "Power Supplies"; }
+#categories a:nth-child(15):after { content: ""; }
+#categories a:nth-child(16) { display: block; }
+#categories a:nth-child(16):before { content: "Rack & Rail Kits"; }
+#categories a:nth-child(16):after { content: ""; }
+#categories a:nth-child(17) { display: block; }
+#categories a:nth-child(17):before { content: "SD Modules"; }
+#categories a:nth-child(17):after { content: ""; }
+#categories a:nth-child(18) { display: block; }
+#categories a:nth-child(18):before { content: "Switches and Routers"; }
+#categories a:nth-child(18):after { content: ""; }
+#categories a:nth-child(19) { display: block; }
+#categories a:nth-child(19):before { content: "Tape and Storage"; }
+#categories a:nth-child(19):after { content: ""; }
+#categories a:nth-child(20) { display: block; }
+#categories a:nth-child(20):before { content: "Other"; }
+#categories a:nth-child(20):after { content: ""; }

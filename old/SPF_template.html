@@ -1,0 +1,431 @@
+<style type="text/css">
+    .header-wrapper,
+    .subheader-wrapper,
+    .left-col,
+    .right-col,
+    .creditlink,
+    .footer-wrapper,
+    .boxcontent,
+    #ns_copyright,
+    .topbar,
+    #showcase,
+    #tabs,
+    #tab1,
+    #tab2,
+    #tab3,
+    #tab4,
+    #tab5,
+    #descriptiontitle,
+    #design,
+    #seo {
+        display: none;
+    }
+    
+    #descriptioncontent,
+    #backup {
+        font-family: sans-serif;
+    }
+    
+    #backup {
+        padding: 10px;
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    tr:nth-child(even) {
+        background: #eee;
+    }
+
+    #head-box * {
+        font-family: sans-serif,Oswald, Arial, Helvetica;
+    }
+
+    #head-line {
+        background: #ffe004;
+        border: solid #e8e337 1px;
+        height: 5px;
+        clear: both;
+    }
+
+        #left-side {
+        /*   position: absolute;
+        top: 35px; */
+        float: left;
+        width: 40%;
+    }
+
+        #right-side {
+        /*   text-align: right; */
+        float: right;
+        width: 450px;
+    }
+
+        #payment {
+        /*   display: inline-block; */
+        /*   text-align: right; */
+        float: right;
+        clear: right;
+    }
+
+        #call {
+        background: url('https://s3.amazonaws.com/savemyserver/SPF/images/shared_linkover.png');
+        float: right;
+        clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
+        
+        /*   padding: 10px 40px 0px 5px; */
+        text-align: right;
+        height: 40px;
+        width: 100%;
+        /*   display: inline-block; */
+    }
+
+#call p {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+    margin: 8px 27px;
+}
+
+#greeting {
+  float: right;
+  letter-spacing: 0.02px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#main-logo img {
+/*   background: url('https://s3.amazonaws.com/savemyserver/SPF/images/logo.png'); */
+  display: inline-block;
+  height: 67px;
+  width: 321px;
+  margin: 25px 0 0 0;
+}
+
+.small-card {
+  background: url('https://s3.amazonaws.com/savemyserver/SPF/images/cards.jpg');
+  background-size: 150px;
+  display: inline-block;
+  height: 29px;
+  width: 45px;
+/*   border: solid; */
+}
+
+#paypal {
+/*  this is mostly taken care of by the .small-card class  */
+}
+
+#visa {
+  background-position: 0px -37px;
+}
+
+#master-card {
+  background-position: 0px -73px;
+}
+
+#citrus {
+  background-position: -105px -1px;
+}
+
+#maestro {
+  background-position: -53px -73px;
+}
+
+</style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1" />
+
+<link rel="stylesheet" type="text/css" href="http://d3upwncywg1ue2.cloudfront.net/SPF/style/combined.css" />
+<!--<link rel="stylesheet" type="text/css" href="http://d3upwncywg1ue2.cloudfront.net/SPF/style/category.css" />-->
+<!--<link rel="stylesheet" type="text/css" href="http://d3upwncywg1ue2.cloudfront.net/SPF/style/promo.css" />-->
+<div id="background" class="frooition-container template">
+    <div id="container" class="page">
+        <!-- Replacement header code -->
+        <div id="head-box" class="header-wrapper row">
+            <div id="left-side">
+                <div id="main-logo"><img src="https://s3.amazonaws.com/savemyserver/SPF/images/logo.png" alt="" /></div>
+            </div>
+            <div id="right-side">
+                <div id="greeting">Welcome to Server Parts Fast Official eBay Store</div>
+                <div id="payment">
+                <div id="paypal" class="small-card"></div>
+                <div id="visa" class="small-card"></div>
+                <div id="master-card" class="small-card"></div>
+                <div id="citrus" class="small-card"></div>
+                <div id="maestro" class="small-card"></div>
+                </div>
+                <div id="call">
+                <p>Have A Question?&nbsp;&nbsp;Call 1-800-778-2012</p>
+                </div>
+            </div>
+            <div id="head-line"></div>
+            </div>
+        <!-- End new header code -->
+        <!--<div class="header-wrapper">
+            <div id="header" class="header row">
+                <a class="homelink" href="http://stores.ebay.com/ServerPartsFast" target="_top"></a>
+                <frooheader>
+                    <div id="customhtml"></div>
+                </frooheader>
+            </div>
+        </div>-->
+        <div class="subheader-wrapper">
+            <div class="subheader row">
+                <froosubheader></froosubheader>
+            </div>
+        </div>
+        <div class="col-wrapper">
+            <div id="cols" class="cols row">
+                <div id="leftpane" class="left-col">
+                    <!-- store search -->
+                    <storesearch>
+                        <div class="search">
+                            <div class="boxtitle">Store Search</div>
+                            <form action="http://stores.ebay.com/serverpartsfast/_i.html" target="_top" name="search" method="get" class="searchform">
+                                <input type="text" class="searchbox" placeholder="Search..." name="_nkw">
+                                <input type="submit" value="Search..." class="submitbox">
+                            </form>
+                        </div>
+                    </storesearch>
+                    <!-- end store search -->
+                    <!-- store categories -->
+                    <storecategories>
+                        <div class="boxtitle">Store Categories</div>
+                        <div id="categories">
+                            <div class="boxtitle">Shop Categories</div>
+                            <div class="boxlinks">
+                                <a href="http://stores.ebay.com/ServerPartsFast/Server-Hard-Drives-/_i.html?_fsub=7282067010" target="_top">Server - Hard Drives</a>
+                                <div class="sub-cat">
+                                    <a href="http://stores.ebay.com/ServerPartsFast/SAS-2-5-Hard-Drives-/_i.html?_fsub=19417892010">SAS - 2.5" Hard Drives</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/SAS-3-5-Hard-Drives-/_i.html?_fsub=19417893010">SAS - 3.5" Hard Drives</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/SATA-3-5-Hard-Drives-/_i.html?_fsub=19417895010">SATA - 3.5" Hard Drives</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/SCSI-Drives-/_i.html?_fsub=7282273010">SCSI Drives</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Misc-Drives-/_i.html?_fsub=7283355010">Misc Drives</a>
+                                </div>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Server-Memory-/_i.html?_fsub=7282068010" target="_top">Server - Memory</a>
+                                <div class="sub-cat">
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-3200R-/_i.html?_fsub=19354454010">Memory - PC2-3200R</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-4200F-/_i.html?_fsub=7282115010">Memory - PC2-4200F</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-4200R-/_i.html?_fsub=7282134010">Memory - PC2-4200R</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-5300F-/_i.html?_fsub=7282116010">Memory - PC2-5300F</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-5300P-/_i.html?_fsub=19354453010">Memory - PC2-5300P</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-6400P-/_i.html?_fsub=19354455010">Memory - PC2-6400P</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-8500E-/_i.html?_fsub=7283360010">Memory - PC3-8500E</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-8500R-/_i.html?_fsub=7375734010">Memory - PC3-8500R</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-10600E-/_i.html?_fsub=7283362010">Memory - PC3-10600E</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-10600R-/_i.html?_fsub=7283361010">Memory - PC3-10600R</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-12800R-/_i.html?_fsub=19354456010">Memory - PC3-12800R</a>
+                                    <a href="http://stores.ebay.com/ServerPartsFast/Server-Memory-Misc-/_i.html?_fsub=7707869010">Server Memory - Misc</a>
+                                </div>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Server-Processors-/_i.html?_fsub=7282072010" target="_top">Server - Processors</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Dell-Server-Parts-/_i.html?_fsub=7281926010" target="_top">Dell Server Parts</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/HP-Server-Parts-/_i.html?_fsub=7281949010" target="_top">HP Server Parts</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Accessories-/_i.html?_fsub=7282029010" target="_top">Accessories</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Backplanes-/_i.html?_fsub=13618240010" target="_top">Backplanes</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Batteries-/_i.html?_fsub=13788761010" target="_top">Batteries</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Cards-and-Controllers-/_i.html?_fsub=7282066010" target="_top">Cards and Controllers</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Disk-Array-Components-/_i.html?_fsub=13782906010" target="_top">Disk Array Components</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Heatsinks-and-Cooling-/_i.html?_fsub=13647595010" target="_top">Heatsinks and Cooling</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Motherboards-/_i.html?_fsub=7282070010" target="_top">Motherboard</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Optical-Drives-/_i.html?_fsub=7282069010" target="_top">Optical Drives</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Power-Cords-and-PDUs-/_i.html?_fsub=7282065010" target="_top">Power Cords and PDUs</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Power-Supplies-/_i.html?_fsub=7282071010" target="_top">Power Supplies</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Racks-Rail-Kits-/_i.html?_fsub=7282073010" target="_top">Rack & Rail Kits</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/SD-Modules-/_i.html?_fsub=13647301010" target="_top">SD Modules</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Switches-and-Routers-/_i.html?_fsub=7282074010" target="_top">Switches and Routers</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Tape-and-Storage-/_i.html?_fsub=7282075010" target="_top">Tape and Storage</a>
+                                <a href="http://stores.ebay.com/ServerPartsFast/Other-/_i.html?_fsub=1" target="_top">Other</a>
+                            </div>
+                        </div>
+                    </storecategories>
+                    <!-- end store categories -->
+                    <!-- froo helpful links box -->
+                    <froohelpfullinks>
+                        <div id="helpful_links" class="boxtitle">Helpful Links</div>
+                        <div id="helpful_links_content" class="boxlinks"><a href="http://my.ebay.com/ws/eBayISAPI.dll?AcceptSavedSeller&mode=0&preference=0&sellerid=serverpartsfast&ru=http%3A%2F%2Fcgi.ebay.com%2Fws%2FeBayISAPI.dll%3FViewItem%26item%0&ssPageName=STRK:MEFS:ADDVI" target="_top">Add to Favorite Sellers</a>                            <a href="http://my.ebay.com/ws/eBayISAPI.dll?AcceptSavedSeller&linkname=includenewsletter&sellerid=serverpartsfast" target="_top">Sign up to Newsletter</a> <a href="http://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback&userid=serverpartsfast"
+                                target="_top">View Feedback</a> <a href="http://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&requested=serverpartsfast&_trksid=p2050430.m2531.l4583&rt=nc&iid=381447109992" target="_top">Contact Seller</a> <a href="http://stores.ebay.com/ServerPartsFast"
+                                target="_top">Visit seller's eBay Shop</a> <a href="http://ebay.com/usr/serverpartsfast" target="_top">About Seller Page</a> </div>
+                        <div id="helpful_links_base" class="boxbase"></div>
+                    </froohelpfullinks>
+                    <!-- end froo helpful links box -->
+                    <!-- froo left custom box -->
+                    <frooleftcustombox></frooleftcustombox>
+                    <!-- end froo left custom box -->
+                </div>
+                <div id="centerpane" class=" center-col">
+                    <!-- froo top middle custom box -->
+                    <frootopmiddlecustombox></frootopmiddlecustombox>
+                    <!-- end froo top middle custom box -->
+                    <div id="showcase">
+                        <!-- froo item title -->
+                        <frooitemtitle>
+                            <h3>[[Title]]</h3>
+                        </frooitemtitle>
+                        <!-- end froo item title -->
+                        <!-- froo image gallery -->
+                        <froogallery>
+                            <div id="gallery_outer_3">
+                                <div id="gallery">
+                                    <div class="g_image" data-layout="repeatable" data="[[PictureURL1]]">
+                                        <input id="image-0" checked="" type="radio" name="image-group" autocomplete="off" />
+                                    <label class="thumbimage" for="image-0"> 
+                                        <li><img src="[[PictureURL1]]" /> </li>
+                                    </label>
+                                    <input id="mainimage-0" class="mainimagecb" type="checkbox" />
+                                    <label class="mainimage" for="mainimage-0"> 
+                                        <div>
+                                            <label class="leftarrow" for="image--1"><span></span></label>
+                                            <img src="[[PictureURL1]]" />
+                                            <label class="rightarrow" for="image-1" data-next-image="[[PictureURL2]]"><span></span></label> 
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="g_image" data-layout="repeatable" data="[[PictureURL2]]">
+                                    <input id="image-1" type="radio" name="image-group" autocomplete="off" />
+                                    <label class="thumbimage" for="image-1"> 
+                                        <li><img src="[[PictureURL2]]" /> </li>
+                                    </label>
+                                    <input id="mainimage-1" class="mainimagecb" type="checkbox" />
+                                    <label class="mainimage" for="mainimage-1"> 
+                                        <div>
+                                            <label class="leftarrow" for="image-0"><span></span></label>
+                                            <img src="[[PictureURL2]]" />
+                                            <label class="rightarrow" for="image-2" data-next-image="[[PictureURL3]]"><span></span></label> 
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="g_image" data-layout="repeatable" data="[[PictureURL3]]">
+                                    <input id="image-2" type="radio" name="image-group" autocomplete="off" />
+                                    <label class="thumbimage" for="image-2"> 
+                                        <li><img src="[[PictureURL3]]" /> </li>
+                                    </label>
+                                    <input id="mainimage-2" class="mainimagecb" type="checkbox" />
+                                    <label class="mainimage" for="mainimage-2"> 
+                                        <div>
+                                            <label class="leftarrow" for="image-1"><span></span></label>
+                                            <img src="[[PictureURL3]]" />
+                                            <label class="rightarrow" for="image-3" data-next-image=""><span></span></label> 
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        </froogallery>
+                        <!-- end froo image gallery --><span id="feedback_msg"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- froo description -->
+                    <froodescription>
+                        <div id="description">
+                            <div class="boxtitle">Item Specifications</div>
+                            <div id="descriptioncontent">[[SPF-memory]]</div>
+                            <div id="descriptiontitle">Item Description</div>
+                            <div id="descriptionbase">[[Description]]<br />[[Memory Description]]</div>
+                        </div>
+                    </froodescription>
+                    <!-- end froo description -->
+                    <!-- froo seller tabs-->
+                    <frootabs>
+                        <div id="tabs">
+                            <input id="tab-1" checked="" type="radio" name="tab-group-1" /> 
+                            <label for="tab-1">
+                                <li><a>About Us</a></li>
+                            </label>
+                            <label class="mobile_tab label-tab-1" for="tab-1">
+                                <li><a>About Us</a></li>
+                            </label>
+                            <input id="tab-2" type="radio" name="tab-group-1" /> 
+                            <label for="tab-2">
+                                <li><a>Payment</a> </li>
+                            </label>
+                            <input id="tab-3" type="radio" name="tab-group-1" /> 
+                            <label for="tab-3">
+                                <li><a>Shipping</a> </li>
+                            </label>
+                            <input id="tab-4" type="radio" name="tab-group-1" /> 
+                            <label for="tab-4">
+                                <li><a>Terms</a> </li>
+                            </label>
+                            <input id="tab-5" type="radio" name="tab-group-1" /> 
+                            <label for="tab-5">
+                                <li><a>Returns</a> </li>
+                            </label>
+                            <!-- content for tabs above -->
+                            <div class="content content1">
+                                <h4 class="tabtitle">About Us</h4>
+                                <pre class="tabcontent"></pre>
+                                <div class="tabbase">[[SPF-AboutUs]]</div>
+                            </div>
+                            <label class="mobile_tab label-tab-2" for="tab-2">
+                                <li><a>Payment</a> </li>
+                            </label>
+                            <div class="content content2">
+                                <h4 class="tabtitle">Payment</h4>
+                                <pre class="tabcontent"></pre>
+                                <div class="tabbase">[[SPF-Payment]]</div>
+                            </div>
+                            <label class="mobile_tab label-tab-3" for="tab-3">
+                                <li><a>Shipping</a> </li>
+                            </label>
+                            <div class="content content3">
+                                <h4 class="tabtitle">Shipping</h4>
+                                <pre class="tabcontent"></pre>
+                                <div class="tabbase">[[SPF-Shipping]]</div>
+                            </div>
+                            <label class="mobile_tab label-tab-4" for="tab-4">
+                                <li><a>Terms</a> </li>
+                            </label>
+                            <div class="content content4">
+                                <h4 class="tabtitle">Terms</h4>
+                                <pre class="tabcontent"></pre>
+                                <div class="tabbase">[[SPF-Terms]]</div>
+                            </div>
+                            <label class="mobile_tab label-tab-5" for="tab-5">
+                                <li><a>Returns</a> </li>
+                            </label>
+                            <div class="content content5">
+                                <h4 class="tabtitle">Returns</h4>
+                                <pre class="tabcontent"></pre>
+                                <div class="tabbase">[[SPF-Returns]]</div>
+                            </div>
+                        </div>
+                    </frootabs>
+                    <!-- end froo seller tabs-->
+
+                    <!-- froo bottom middle custom box -->
+                    <froobottommiddlecustombox></froobottommiddlecustombox>
+                    <!-- end froo bottom middle custom box -->
+                </div>
+                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="footer-wrapper">
+                <div id="footer" class="footer row">
+                    <!-- froo custom footer custom content -->
+                    <froofooter></froofooter>
+                    <!-- end froo custom footer content -->
+                </div>
+            </div>
+            </div>
+            <p>[[ItemInfo]] [[QuoteID_If]]</p>
+            </div>
+
+        <!-- froo bottom middle custom box -->
+        <froobottommiddlecustombox></froobottommiddlecustombox>
+        <!-- end froo bottom middle custom box -->
+    </div>
+    <div class="clear"></div>
+</div>
+</div>
+<div class="footer-wrapper row">
+    <div id="footer" class="footer row">
+        <!-- froo custom footer custom content -->
+        <froofooter></froofooter>
+        <!-- end froo custom footer content -->
+    </div>
+</div>
+</div>
+<p>[[ItemInfo]] [[QuoteID_If]]</p>
+</div>[[SPF-Analytics]]

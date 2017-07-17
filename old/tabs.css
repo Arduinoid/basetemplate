@@ -1,0 +1,66 @@
+input {
+  display: none;
+}
+
+#terms1, #terms2, #terms3, #terms4 {
+  display: none;
+}
+
+.tab-content {
+  display: block;
+}
+
+#shipping-tab + label {
+  display: inline-block;
+  height: 33px;
+  width: 133px;
+  background: url(https://d3upwncywg1ue2.cloudfront.net/images/x-tt-01.png)
+}
+
+#shipping-tab:checked + label {
+  background: url(https://d3upwncywg1ue2.cloudfront.net/images/x-tt-01s.png)
+}
+
+#terms-tab + label {
+  display: inline-block;
+  height: 33px;
+  width: 133px;
+  background: url(https://d3upwncywg1ue2.cloudfront.net/images/x-tt-02.png)
+}
+
+#terms-tab:checked + label {
+  background: url(https://d3upwncywg1ue2.cloudfront.net/images/x-tt-02s.png)
+}
+
+#payment-tab + label {
+  display: inline-block;
+  height: 33px;
+  width: 133px;
+  background: url(https://d3upwncywg1ue2.cloudfront.net/images/x-tt-03.png)
+}
+
+#payment-tab:checked + label {
+  background: url(https://d3upwncywg1ue2.cloudfront.net/images/x-tt-03s.png)
+}
+
+#about-tab + label {
+  display: inline-block;
+  height: 33px;
+  width: 133px;
+  background: url(https://d3upwncywg1ue2.cloudfront.net/images/x-tt-04.png)
+}
+
+#about-tab:checked + label {
+  background: url(https://d3upwncywg1ue2.cloudfront.net/images/x-tt-04s.png)
+}
+
+#shipping-tab:checked ~ .tab-content>#terms1,
+#terms-tab:checked ~ .tab-content>#terms2,
+#payment-tab:checked ~ .tab-content>#terms3,
+#about-tab:checked ~ .tab-content>#terms4 {
+  display: inline-block;
+}
+
+.other-stuff {
+  font-size: 2em;
+}

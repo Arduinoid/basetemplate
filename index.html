@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Base</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        /******************************************/
+        /* REMOVE THE PROTO TYPE STYLES WHEN DONE */
+        /******************************************/
+        .proto {
+            background-color: #ccc;
+            border: 2px dotted #eee;
+        }
+
+        /********************/
+        /* END PROTO STYLES */
+        /********************/
+        #head {
+    height: 100px;
+}
+
+#main-box {
+    border-left: solid lightgrey 5px;
+}
+
+.accent-color {
+    background: green;
+    border: solid darkgrey 1px;
+}
+
+.fill-height {
+    height: 100%;
+}
+
+.center-height {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+/*************/
+/* TAB STYLE */
+/*************/
+
+input {
+    display: none;
+}
+
+#terms1,
+#terms2,
+#terms3,
+#terms4 {
+    display: none;
+}
+
+.tab-content {
+    display: block;
+}
+
+#shipping-tab+label {
+    display: inline-block;
+    height: 33px;
+    width: 100%;
+    background-color: black;
+}
+
+#shipping-tab:checked+label {
+    background-color: green;
+}
+
+#terms-tab+label {
+    display: inline-block;
+    height: 33px;
+    width: 100%;
+    background-color: black;
+}
+
+#terms-tab:checked+label {
+    background-color: green;
+}
+
+#payment-tab+label {
+    display: inline-block;
+    height: 33px;
+    width: 100%;
+    background-color: black;
+}
+
+#payment-tab:checked+label {
+    background-color: green;
+}
+
+#about-tab+label {
+    display: inline-block;
+    height: 33px;
+    width: 100%;
+    background-color: black;
+}
+
+#about-tab:checked+label {
+    background-color: green;
+}
+
+#shipping-tab:checked~.tab-content#terms1,
+#terms-tab:checked~.tab-content#terms2,
+#payment-tab:checked~.tab-content#terms3,
+#about-tab:checked~.tab-content#terms4 {
+    display: inline-block;
+}
+
+.other-stuff {
+    font-size: 2em;
+}
+
+/***********************/
+/* Right header styles */
+/***********************/
+#call {
+    background: url('https://s3.amazonaws.com/savemyserver/SPF/images/shared_linkover.png');
+    float: right;
+    clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+    /*   padding: 10px 40px 0px 5px; */
+    text-align: right;
+    height: 40px;
+    width: 100%;
+    /*   display: inline-block; */
+}
+#call p {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+    margin: 8px 27px;
+}
+#greeting {
+    float: right;
+    letter-spacing: 0.02px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#payment {
+    /*   display: inline-block; */
+    /*   text-align: right; */
+    float: right;
+    clear: right;
+}
+.small-card {
+    background: url('https://s3.amazonaws.com/savemyserver/SPF/images/cards.jpg');
+    background-size: 150px;
+    display: inline-block;
+    height: 29px;
+    width: 45px;
+    /*   border: solid; */
+}
+
+#paypal {
+    /*  this is mostly taken care of by the .small-card class  */
+}
+
+#visa {
+    background-position: 0px -37px;
+}
+
+#master-card {
+    background-position: 0px -73px;
+}
+
+#citrus {
+    background-position: -105px -1px;
+}
+
+#maestro {
+    background-position: -53px -73px;
+}
+
+/**********************/
+/* Header line styles */
+/**********************/
+
+#header-line {
+    height: 5px;
+    clear: both;
+}
+
+/*******************/
+/* Side Bar Styles */
+/*******************/
+
+storecategories .boxtitle {
+    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
+    color: #fff;
+    height: 30px;
+    padding: 1px 10px;
+}
+
+.sub-cat {
+    padding-left: 8px;
+    font-size: 0.9em;
+}
+
+.sub-cat>a:before {
+    content: "";
+    margin: 0px 8px 4px 0px;
+    height: 2px;
+    width: 4px;
+    background: #555;
+    display: inline-block;
+}
+
+ul.categories,
+.boxlinks {
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+ul.categories ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+ul.categories li {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+ul.categories li a,
+.boxlinks a {
+    text-align: left;
+    padding: 5px;
+    background: none;
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    color: #686666;
+    text-decoration: none;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+ul.categories li a:hover,
+.boxlinks a:hover {
+    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linkover.png");
+    color: #fff;
+    border-top: none;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+ul.categories li:first-child,
+.boxlinks:first-child {
+    border-top: none;
+}
+
+ul.categories li:first-child:hover,
+.boxlinks:first-child:hover {
+    border-top: none;
+}
+
+#categories .boxtitle,
+#helpful_links,
+.categories .boxtitle,
+.categories h2.boxtitle,
+.pages .boxtitle {
+    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
+    color: #fff;
+    height: 30px;
+    padding: 1px 10px;
+}
+
+#categories a:after {
+    color: #686666;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#categories a:hover:after {
+    color: #fff;
+}
+
+#categories .boxtitle {
+    display: none;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!--##################-->
+        <!-- Main Header area -->
+        <!--##################-->
+        <div id="head" class="row">
+            <div class="col-lg-12 fill-height">
+                <div class="row fill-height">
+                    <div id="storelogo" class="col-lg-4 fill-height proto">
+                        <h1 class="center-height">ServerPallets</h1>
+                    </div>
+                    <div id="info" class="col-lg-offset-2 col-lg-6 fill-height text-right proto">
+                        <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/embedded_styles.css">
+</head>
+<div id="right-side">
+    <div id="greeting">Welcome to ServerPallets eBay Store</div>
+    <div id="payment">
+        <div id="paypal" class="small-card"></div>
+        <div id="visa" class="small-card"></div>
+        <div id="master-card" class="small-card"></div>
+        <div id="citrus" class="small-card"></div>
+        <div id="maestro" class="small-card"></div>
+    </div>
+    <div id="call">
+        <p>Have A Question?&nbsp;&nbsp;Call 1-800-XXX-XXXX</p>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Header area -->
+
+        <!-- Header underline  -->
+        <div class="row">
+            <div id="header-line" class="col-lg-12 accent-color"></div>
+        </div>
+        <!-- End Header underline  -->
+
+
+        <!--####################-->
+        <!-- Main Template body -->
+        <!--####################-->
+        <div id="main" class="row">
+
+            <!--##################-->
+            <!-- Side bar box out -->
+            <!--##################-->
+            <div id="side-box" class="col-lg-3 fill-height proto">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/embedded_styles.css">
+</head>
+<storecategories>
+    <div class="boxtitle">Store Categories</div>
+    <div id="categories">
+        <div class="boxtitle">Shop Categories</div>
+        <div class="boxlinks">
+            <a href="http://stores.ebay.com/ServerPartsFast/Server-Hard-Drives-/_i.html?_fsub=7282067010" target="_top">Server - Hard Drives</a>
+            <div class="sub-cat">
+                <a href="http://stores.ebay.com/ServerPartsFast/SAS-2-5-Hard-Drives-/_i.html?_fsub=19417892010">SAS - 2.5" Hard Drives</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/SAS-3-5-Hard-Drives-/_i.html?_fsub=19417893010">SAS - 3.5" Hard Drives</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/SATA-3-5-Hard-Drives-/_i.html?_fsub=19417895010">SATA - 3.5" Hard Drives</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/SCSI-Drives-/_i.html?_fsub=7282273010">SCSI Drives</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Misc-Drives-/_i.html?_fsub=7283355010">Misc Drives</a>
+            </div>
+            <a href="http://stores.ebay.com/ServerPartsFast/Server-Memory-/_i.html?_fsub=7282068010" target="_top">Server - Memory</a>
+            <div class="sub-cat">
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-3200R-/_i.html?_fsub=19354454010">Memory - PC2-3200R</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-4200F-/_i.html?_fsub=7282115010">Memory - PC2-4200F</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-4200R-/_i.html?_fsub=7282134010">Memory - PC2-4200R</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-5300F-/_i.html?_fsub=7282116010">Memory - PC2-5300F</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-5300P-/_i.html?_fsub=19354453010">Memory - PC2-5300P</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC2-6400P-/_i.html?_fsub=19354455010">Memory - PC2-6400P</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-8500E-/_i.html?_fsub=7283360010">Memory - PC3-8500E</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-8500R-/_i.html?_fsub=7375734010">Memory - PC3-8500R</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-10600E-/_i.html?_fsub=7283362010">Memory - PC3-10600E</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-10600R-/_i.html?_fsub=7283361010">Memory - PC3-10600R</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Memory-PC3-12800R-/_i.html?_fsub=19354456010">Memory - PC3-12800R</a>
+                <a href="http://stores.ebay.com/ServerPartsFast/Server-Memory-Misc-/_i.html?_fsub=7707869010">Server Memory - Misc</a>
+            </div>
+            <a href="http://stores.ebay.com/ServerPartsFast/Server-Processors-/_i.html?_fsub=7282072010" target="_top">Server - Processors</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Dell-Server-Parts-/_i.html?_fsub=7281926010" target="_top">Dell Server Parts</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/HP-Server-Parts-/_i.html?_fsub=7281949010" target="_top">HP Server Parts</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Accessories-/_i.html?_fsub=7282029010" target="_top">Accessories</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Backplanes-/_i.html?_fsub=13618240010" target="_top">Backplanes</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Batteries-/_i.html?_fsub=13788761010" target="_top">Batteries</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Cards-and-Controllers-/_i.html?_fsub=7282066010" target="_top">Cards and Controllers</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Disk-Array-Components-/_i.html?_fsub=13782906010" target="_top">Disk Array Components</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Heatsinks-and-Cooling-/_i.html?_fsub=13647595010" target="_top">Heatsinks and Cooling</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Motherboards-/_i.html?_fsub=7282070010" target="_top">Motherboard</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Optical-Drives-/_i.html?_fsub=7282069010" target="_top">Optical Drives</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Power-Cords-and-PDUs-/_i.html?_fsub=7282065010" target="_top">Power Cords and PDUs</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Power-Supplies-/_i.html?_fsub=7282071010" target="_top">Power Supplies</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Racks-Rail-Kits-/_i.html?_fsub=7282073010" target="_top">Rack & Rail Kits</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/SD-Modules-/_i.html?_fsub=13647301010" target="_top">SD Modules</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Switches-and-Routers-/_i.html?_fsub=7282074010" target="_top">Switches and Routers</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Tape-and-Storage-/_i.html?_fsub=7282075010" target="_top">Tape and Storage</a>
+            <a href="http://stores.ebay.com/ServerPartsFast/Other-/_i.html?_fsub=1" target="_top">Other</a>
+        </div>
+    </div>
+</storecategories>
+                    </div>
+                </div>
+            </div>
+            <!-- End Side bar box out-->
+
+            <!--##############-->
+            <!-- Main box out -->
+            <!--##############-->
+            <div id="main-box" class="col-lg-9 proto">
+
+                <!--#######-->
+                <!-- Title -->
+                <!--#######-->
+                <div class="row">
+                    <div class="col-lg-offset-4 col-lg-4">
+                        <h2 class="text-center">[[Title]]</h2>
+                    </div>
+                </div>
+                <!-- End Title -->
+
+                <!--################-->
+                <!-- Main Image box -->
+                <!--################-->
+                <div class="row">
+                    <div id="image-box" class="col-lg-12">
+
+                        <!--##################-->
+                        <!-- Image on display -->
+                        <!--##################-->
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 proto">
+                                <div id="item-image" class="text-center"><img src="http://via.placeholder.com/600x600" alt="" class="proto"></div>
+                            </div>
+                        </div>
+                        <!-- End Image on display -->
+
+                        <!--##################-->
+                        <!-- Image Thumbnails -->
+                        <!--##################-->
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8">
+                                <div id="thumbnails" class="text-center">
+                                    <div class="row">
+                                        <div class="col-lg-3 proto"><img src="http://via.placeholder.com/100x100" alt=""></div>
+                                        <div class="col-lg-3 proto"><img src="http://via.placeholder.com/100x100" alt=""></div>
+                                        <div class="col-lg-3 proto"><img src="http://via.placeholder.com/100x100" alt=""></div>
+                                        <div class="col-lg-3 proto"><img src="http://via.placeholder.com/100x100" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Image Thumbnails -->
+
+                    </div>
+                </div>
+                <!-- End Main Image box -->
+
+                <!--#####################-->
+                <!-- Middle Content Area -->
+                <!--#####################-->
+                <div class="row">
+                    <div class="col-lg-12" id="content-area">
+
+                        <!--#####################-->
+                        <!-- Specifications Area -->
+                        <!--#####################-->
+
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                <!--##############-->
+                                <!-- Specs Header -->
+                                <!--##############-->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div id="specs-header" class="proto">
+                                            <h2>Item Specifications</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Specs Header -->
+
+                                <!--############-->
+                                <!-- Specs Body -->
+                                <!--############-->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div id="spec-body" class="proto">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Spec</th>
+                                                        <th>Info</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">Make</td>
+                                                        <td>Dell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">Model</td>
+                                                        <td>PowerEdge R410</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Specs Body -->
+
+                            </div>
+                        </div>
+                        <!-- End Specifications Area -->
+
+                        <!--##################-->
+                        <!-- Description Area -->
+                        <!--##################-->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="description-area">
+                                    <!--####################-->
+                                    <!-- Description Header -->
+                                    <!--####################-->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div id="description-header" class="proto">
+                                                <h2>Item Description</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Description Header -->
+
+                                    <!--##################-->
+                                    <!-- Description Body -->
+                                    <!--##################-->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div id="description-body" class="lead proto">
+                                                <p>Vel incidunt eos perferendis. Nobis maiores deserunt quasi ut voluptatem
+                                                    eius nisi non. Voluptates architecto eum quos. Dolorem repellendus rem.
+                                                    Ducimus aut consequatur odit illum delectus harum. Quos id quis sed sit.
+                                                    Quos qui quibusdam iure et aliquam. Veritatis voluptas nam voluptatem
+                                                    magnam reiciendis. Rem numquam aut non ab. Quis aliquid sint at molestiae
+                                                    debitis et ea. Sint qui porro. Quaerat et cupiditate fuga voluptatum
+                                                    voluptatem fuga.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Description Body -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Description Area -->
+
+                        <!--##################-->
+                        <!-- Info Area -->
+                        <!--##################-->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="info-area">
+
+                                    <!--#############-->
+                                    <!-- Tabbed Area -->
+                                    <!--#############-->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div id="tabs" class="text-center proto">
+                                                <div class="tabbed-area">
+                                                    <div class="row">
+                                                        <!-- About Tab -->
+                                                        <div class="col-lg-3">
+                                                            <input type="radio" name="tabs" id="about-tab" checked/>
+                                                            <label for="about-tab">About</label>
+                                                            <div id="terms4" class="tab-content">
+                                                                <p>[[SMS-About-Us]]</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Shipping Tab -->
+                                                        <div class="col-lg-3">
+                                                            <input type="radio" name="tabs" id="shipping-tab"/>
+                                                            <label for="shipping-tab">Shipping</label>
+                                                            <div id="terms1" class="tab-content">
+                                                                <p>[[SMS-Shipping]]</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Terms Tab -->
+                                                        <div class="col-lg-3">
+                                                            <input type="radio" name="tabs" id="terms-tab" />
+                                                            <label for="terms-tab">Terms</label>
+                                                            <div id="terms2" class="tab-content">
+                                                                <p>[[SMS-Terms]]</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Payment Tab -->
+                                                        <div class="col-lg-3">
+                                                            <input type="radio" name="tabs" id="payment-tab" />
+                                                            <label for="payment-tab">Payment</label>
+                                                            <div id="terms3" class="tab-content">
+                                                                <p>[[SMS-Payment]]</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Tabbed Area -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Info Area -->
+                    </div>
+                    <!-- End Middle Content Area -->
+
+
+                </div>
+                <!-- End Main box out -->
+
+            </div>
+            <!--######################-->
+            <!-- Footer Content Block -->
+            <!--######################-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="footer-block" class="proto">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8">
+                                <div id="footer-content">
+                                    <div class="row">
+                                        <div class="col-lg-4 proto">LEFT SIDE</div>
+                                        <div class="col-lg-4 proto">MIDDLE LOGO</div>
+                                        <div class="col-lg-4 proto">RIGHT SIDE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Content Block -->
+            
+<div>
+    <h2>This is my test footer text</h2>
+</div>
+
+            <!-- End Main Template Body -->
+
+            <!--#################-->
+            <!-- Meta Info Block -->
+            <!--#################-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="meta-data">[[ItemInfo]] [[QuoteID_If]]</div>
+                </div>
+            </div>
+            <!-- End Meta Info Block -->
+        </div>
+    </div>
+</body>
+
+</html>

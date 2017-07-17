@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Base</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        /******************************************/
+        /* REMOVE THE PROTO TYPE STYLES WHEN DONE */
+        /******************************************/
+        .proto {
+            background-color: #ccc;
+            border: 2px dotted #eee;
+        }
+
+        /********************/
+        /* END PROTO STYLES */
+        /********************/
+        {% include 'embedded_styles.css' %}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!--##################-->
+        <!-- Main Header area -->
+        <!--##################-->
+        <div id="head" class="row">
+            <div class="col-lg-12 fill-height">
+                <div class="row fill-height">
+                    <div id="storelogo" class="col-lg-4 fill-height proto">
+                        <h1 class="center-height">{{ content.store }}</h1>
+                    </div>
+                    <div id="info" class="col-lg-offset-2 col-lg-6 fill-height text-right proto">
+                        {% include 'right_top.html' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Header area -->
+
+        <!-- Header underline  -->
+        <div class="row">
+            <div id="header-line" class="col-lg-12 accent-color"></div>
+        </div>
+        <!-- End Header underline  -->
+
+
+        <!--####################-->
+        <!-- Main Template body -->
+        <!--####################-->
+        <div id="main" class="row">
+
+            <!--##################-->
+            <!-- Side bar box out -->
+            <!--##################-->
+            <div id="side-box" class="col-lg-3 fill-height proto">
+                <div class="row">
+                    <div class="col-lg-12">
+                        {% include 'old_side_bar.html' %}
+                    </div>
+                </div>
+            </div>
+            <!-- End Side bar box out-->
+
+            <!--##############-->
+            <!-- Main box out -->
+            <!--##############-->
+            <div id="main-box" class="col-lg-9 proto">
+
+                <!--#######-->
+                <!-- Title -->
+                <!--#######-->
+                <div class="row">
+                    <div class="col-lg-offset-4 col-lg-4">
+                        <h2 class="text-center">[[Title]]</h2>
+                    </div>
+                </div>
+                <!-- End Title -->
+
+                <!--################-->
+                <!-- Main Image box -->
+                <!--################-->
+                <div class="row">
+                    <div id="image-box" class="col-lg-12">
+
+                        <!--##################-->
+                        <!-- Image on display -->
+                        <!--##################-->
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 proto">
+                                <div id="item-image" class="text-center"><img src="http://via.placeholder.com/600x600" alt="" class="proto"></div>
+                            </div>
+                        </div>
+                        <!-- End Image on display -->
+
+                        <!--##################-->
+                        <!-- Image Thumbnails -->
+                        <!--##################-->
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8">
+                                <div id="thumbnails" class="text-center">
+                                    <div class="row">
+                                        <div class="col-lg-3 proto"><img src="http://via.placeholder.com/100x100" alt=""></div>
+                                        <div class="col-lg-3 proto"><img src="http://via.placeholder.com/100x100" alt=""></div>
+                                        <div class="col-lg-3 proto"><img src="http://via.placeholder.com/100x100" alt=""></div>
+                                        <div class="col-lg-3 proto"><img src="http://via.placeholder.com/100x100" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Image Thumbnails -->
+
+                    </div>
+                </div>
+                <!-- End Main Image box -->
+
+                <!--#####################-->
+                <!-- Middle Content Area -->
+                <!--#####################-->
+                <div class="row">
+                    <div class="col-lg-12" id="content-area">
+
+                        <!--#####################-->
+                        <!-- Specifications Area -->
+                        <!--#####################-->
+
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                <!--##############-->
+                                <!-- Specs Header -->
+                                <!--##############-->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div id="specs-header" class="proto">
+                                            <h2>Item Specifications</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Specs Header -->
+
+                                <!--############-->
+                                <!-- Specs Body -->
+                                <!--############-->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div id="spec-body" class="proto">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Spec</th>
+                                                        <th>Info</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">Make</td>
+                                                        <td>Dell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">Model</td>
+                                                        <td>PowerEdge R410</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Specs Body -->
+
+                            </div>
+                        </div>
+                        <!-- End Specifications Area -->
+
+                        <!--##################-->
+                        <!-- Description Area -->
+                        <!--##################-->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="description-area">
+                                    <!--####################-->
+                                    <!-- Description Header -->
+                                    <!--####################-->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div id="description-header" class="proto">
+                                                <h2>Item Description</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Description Header -->
+
+                                    <!--##################-->
+                                    <!-- Description Body -->
+                                    <!--##################-->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div id="description-body" class="lead proto">
+                                                <p>Vel incidunt eos perferendis. Nobis maiores deserunt quasi ut voluptatem
+                                                    eius nisi non. Voluptates architecto eum quos. Dolorem repellendus rem.
+                                                    Ducimus aut consequatur odit illum delectus harum. Quos id quis sed sit.
+                                                    Quos qui quibusdam iure et aliquam. Veritatis voluptas nam voluptatem
+                                                    magnam reiciendis. Rem numquam aut non ab. Quis aliquid sint at molestiae
+                                                    debitis et ea. Sint qui porro. Quaerat et cupiditate fuga voluptatum
+                                                    voluptatem fuga.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Description Body -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Description Area -->
+
+                        <!--##################-->
+                        <!-- Info Area -->
+                        <!--##################-->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="info-area">
+
+                                    <!--#############-->
+                                    <!-- Tabbed Area -->
+                                    <!--#############-->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div id="tabs" class="text-center proto">
+                                                <div class="tabbed-area">
+                                                    <div class="row">
+                                                        <!-- About Tab -->
+                                                        <div class="col-lg-3">
+                                                            <input type="radio" name="tabs" id="about-tab" checked/>
+                                                            <label for="about-tab">About</label>
+                                                            <div id="terms4" class="tab-content">
+                                                                <p>[[SMS-About-Us]]</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Shipping Tab -->
+                                                        <div class="col-lg-3">
+                                                            <input type="radio" name="tabs" id="shipping-tab"/>
+                                                            <label for="shipping-tab">Shipping</label>
+                                                            <div id="terms1" class="tab-content">
+                                                                <p>[[SMS-Shipping]]</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Terms Tab -->
+                                                        <div class="col-lg-3">
+                                                            <input type="radio" name="tabs" id="terms-tab" />
+                                                            <label for="terms-tab">Terms</label>
+                                                            <div id="terms2" class="tab-content">
+                                                                <p>[[SMS-Terms]]</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Payment Tab -->
+                                                        <div class="col-lg-3">
+                                                            <input type="radio" name="tabs" id="payment-tab" />
+                                                            <label for="payment-tab">Payment</label>
+                                                            <div id="terms3" class="tab-content">
+                                                                <p>[[SMS-Payment]]</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Tabbed Area -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Info Area -->
+                    </div>
+                    <!-- End Middle Content Area -->
+
+
+                </div>
+                <!-- End Main box out -->
+
+            </div>
+            <!--######################-->
+            <!-- Footer Content Block -->
+            <!--######################-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="footer-block" class="proto">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8">
+                                <div id="footer-content">
+                                    <div class="row">
+                                        <div class="col-lg-4 proto">LEFT SIDE</div>
+                                        <div class="col-lg-4 proto">MIDDLE LOGO</div>
+                                        <div class="col-lg-4 proto">RIGHT SIDE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Content Block -->
+            {% include 'footer.html' %}
+            <!-- End Main Template Body -->
+
+            <!--#################-->
+            <!-- Meta Info Block -->
+            <!--#################-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="meta-data">[[ItemInfo]] [[QuoteID_If]]</div>
+                </div>
+            </div>
+            <!-- End Meta Info Block -->
+        </div>
+    </div>
+</body>
+
+</html>

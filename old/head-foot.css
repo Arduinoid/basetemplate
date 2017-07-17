@@ -1,0 +1,157 @@
+body {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+}
+
+#call {
+  background: url('https://s3.amazonaws.com/savemyserver/SPF/images/shared_linkover.png');
+  float: right;
+  -webkit-clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
+  color: white;
+  font-size: 1.2em;
+/*   padding: 10px 40px 0px 5px; */
+  text-align: right;
+  height: 40px;
+  width: 100%;
+/*   display: inline-block; */
+}
+
+#call p {
+  margin: 8px 35px;
+}
+
+#footer-box {
+  background: linear-gradient(white, #ececec);
+}
+
+#greeting {
+  float: right;
+  font-size: 1em;
+  font-weight: bold;
+/*   text-align: right; */
+/*   width: 100%; */
+}
+
+#head-line {
+  background: #ffe004;
+  border: solid #e8e337 1px;
+  height: 5px;
+  clear: both;
+}
+
+#left-bar {
+  float: left;
+  background: black;
+  height: 4px;
+  width: 44%;
+  margin: 30px 0;
+}
+
+#left-side {
+/*   position: absolute;
+  top: 35px; */
+  float: left;
+  width: 40%;
+}
+
+#main-logo img {
+/*   background: url('https://s3.amazonaws.com/savemyserver/SPF/images/logo.png'); */
+  display: inline-block;
+  height: 67px;
+  width: 321px;
+  margin: 15px 0 0 0;
+}
+
+#ms-refurb {
+  background: url('https://s3.amazonaws.com/savemyserver/SPF/images/MS-Reg-Refurb.jpg');
+  background-repeat: no-repeat;
+  background-size: 80px;
+  float: left;
+  height: 56px;
+  width: 80px;
+}
+
+#payment {
+/*   display: inline-block; */
+/*   text-align: right; */
+  float: right;
+  clear: right;
+}
+
+#right-bar {
+  float: right;
+  background: black;
+  height: 4px;
+  width: 44%;
+  margin: 30px 0;
+}
+
+#right-side {
+/*   text-align: right; */
+  float: right;
+  width: 450px;
+}
+
+#slogan {
+  background: url('https://s3.amazonaws.com/savemyserver/SPF/images/slogan.png');
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 200px;
+}
+
+#top-area, #bottom-area {
+  display: inline-block;
+  width: 100%;
+}
+
+#truck-logo {
+  background: url('https://s3.amazonaws.com/savemyserver/SPF/images/truck.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  height: 51px;
+  width: 111px;
+}
+
+#vmware {
+  background: url('https://s3.amazonaws.com/savemyserver/SPF/images/vmwarecp.png');
+  background-repeat: no-repeat;
+  background-size: 65px;
+  float: left;
+  height: 55px;
+  width: 70px;
+}
+/* ---- Card styles here ---- */
+/* -------------------------- */
+#paypal {
+/*  this is mostly taken care of by the .small-card class  */
+}
+
+#visa {
+  background-position: 0px -37px;
+}
+
+#master-card {
+  background-position: 0px -73px;
+}
+
+#citrus {
+  background-position: -105px -1px;
+}
+
+#maestro {
+  background-position: -53px -73px;
+}
+/* ---- End card styles ---- */
+
+
+/* #footer-box {
+  display: inline-block;
+} */
+
+.small-card {
+  background: url('https://s3.amazonaws.com/savemyserver/SPF/images/cards.jpg');
+  background-size: 150px;
+  display: inline-block;
+  height: 29px;
+  width: 45px;
+/*   border: solid; */
+}
