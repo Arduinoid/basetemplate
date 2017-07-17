@@ -5,12 +5,11 @@ from utils.my_functions import *
 main_dir = os.path.dirname(os.path.abspath(__file__))
 
 def build_payload():
-    categories_file = 'content\\categories.txt'
+    categories_file = 'content\\categories.json'
     content_file = 'content\\content.json'
     colors_file = 'content\\colors.json'
 
-    categories_list = get_lines_from_file(main_dir + '\\' + categories_file)
-
+    categories_list = get_json_data_from_file(main_dir + '\\' + categories_file)
     colors_dict = get_json_data_from_file(main_dir + '\\' + colors_file)
     content_dict = get_json_data_from_file(main_dir + '\\' + content_file)
 
