@@ -6,10 +6,16 @@
     <div class="boxtitle">Store Categories</div>
     <div id="categories">
         <div class="boxlinks">
-            <a href="{{ link }}" target="_top">{{ category }}</a>
+            {%- for category in categories %}
+            <a href="{{ category['link'] }}" target="_top">{{ category['name'] }}</a>
+            {%- if category['sub'] != None %}
             <div class="sub-cat">
-                <a href="{{ link }}">{{ category }}</a>
+            {%- for sub in category['sub'] %}
+                <a href="{{ sub['link'] }}">{{ sub['name'] }}</a>
+            {%- endfor %}
             </div>
+            {%- endif %}
+            {%- endfor %}
         </div>
     </div>
 </storecategories>
