@@ -1,3 +1,15 @@
-{%- for item in categories %}
-<div class="category">{{ item }}</div>
-{%- endfor %}
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/embedded_styles.css">
+</head>
+<storecategories>
+    <div class="boxtitle">Store Categories</div>
+    <div id="categories">
+        <div class="boxlinks">
+            <a href="{{ link }}" target="_top">{{ category }}</a>
+            <div class="sub-cat">
+                <a href="{{ link }}">{{ category }}</a>
+            </div>
+        </div>
+    </div>
+</storecategories>
