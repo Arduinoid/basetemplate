@@ -18,7 +18,7 @@
 .center-height {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); 
     margin: 0;
 }
 
