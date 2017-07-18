@@ -1,13 +1,19 @@
 <div id="right-side">
-    <div id="greeting">Welcome to {{ content.store }} eBay Store</div>
-    <div id="payment">
-        <div id="paypal" class="small-card"></div>
-        <div id="visa" class="small-card"></div>
-        <div id="master-card" class="small-card"></div>
-        <div id="citrus" class="small-card"></div>
-        <div id="maestro" class="small-card"></div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="greeting">Welcome to {{ content.store }} eBay Store</div>
+        </div>
     </div>
-    <div id="call">
-        <p>Have A Question?&nbsp;&nbsp;Call 1-800-XXX-XXXX</p>
+    <div class="row">
+        <div class="col-lg-12">
+            {% include 'payment.html' %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="call">
+                <p>Have A Question?&nbsp;&nbsp;Call 1-800-XXX-XXXX</p>
+            </div>
+        </div>
     </div>
 </div>

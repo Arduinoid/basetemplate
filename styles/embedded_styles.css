@@ -124,10 +124,6 @@ input {
     font-weight: bold;
 }
 #payment {
-    /*   display: inline-block; */
-    /*   text-align: right; */
-    float: right;
-    clear: right;
 }
 .small-card {
     background: url('https://s3.amazonaws.com/savemyserver/SPF/images/cards.jpg');
