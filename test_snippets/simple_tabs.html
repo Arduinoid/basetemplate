@@ -1,0 +1,33 @@
+<style>
+    input {
+    display: None;
+    }
+
+    #group div {
+    display: None;
+    }
+
+    #group #tab-1:checked~#content-1,
+    #group #tab-2:checked~#content-2,
+    #group #tab-3:checked~#content-3 {
+    display: block;
+    }
+</style>
+
+<div id="group">
+  <input id="tab-1" type="radio" name="tab-group" checked>
+  <label for="tab-1">One</label>
+  <input id="tab-2" type="radio" name="tab-group">
+  <label for="tab-2">Two</label>
+  <input id="tab-3" type="radio" name="tab-group">
+  <label for="tab-3">Three</label>
+  <div id="content-1">
+    <img src="http://lorempixel.com/200/200/" alt="">
+  </div>
+  <div id="content-2">
+    <img src="http://lorempixel.com/300/250/" alt="">
+  </div>
+  <div id="content-3">
+    <img src="http://lorempixel.com/200/100/" alt="">
+  </div>
+</div>
