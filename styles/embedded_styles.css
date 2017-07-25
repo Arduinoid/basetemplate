@@ -32,6 +32,10 @@
 /* TAB STYLE */
 /*************/
 
+.tabbed-area label {
+    color: white;
+}
+
 input {
     display: none;
 }
@@ -100,6 +104,11 @@ input {
 
 .other-stuff {
     font-size: 2em;
+}
+
+.head-title {
+    background: url('https://s3.amazonaws.com/savemyserver/SPF/images/shared_linkover.png');
+    color: #e5e5e5;
 }
 
 /***********************/
