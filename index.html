@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Base</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <style>
-        /******************************************/
-        /* REMOVE THE PROTO TYPE STYLES WHEN DONE */
-        /******************************************/
-        .proto {
-            background-color: #ccc;
-            border: 2px dotted #eee;
-        }
-
-        /********************/
-        /* END PROTO STYLES */
-        /********************/
-        #head {
+<style>
+    #head {
     height: 100px;
 }
 
@@ -140,7 +123,7 @@ input {
 
     /*   padding: 10px 40px 0px 5px; */
     text-align: right;
-    height: 40px;
+    height: 43px;
     width: 100%;
     /*   display: inline-block; */
 }
@@ -702,23 +685,25 @@ ul.categories li:first-child:hover,
 #gallery_outer_3 .g_image[data*="<!-- missing"] {
     display: none;
 }
-    </style>
-</head>
 
-<body>
-    <div class="container">
+tr:nth-child(even) {
+    background: #eee;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="container">
 
-        <!--##################-->
-        <!-- Main Header area -->
-        <!--##################-->
-        <div id="head" class="row">
-            <div class="col-lg-12 fill-height">
-                <div class="row fill-height">
-                    <div id="storelogo" class="col-lg-4 fill-height ">
-                        <h1 class="center-height">ServerPartsFast</h1>
-                    </div>
-                    <div id="info" class="col-lg-offset-2 col-lg-6 fill-height text-right">
-                        <div id="right-side">
+    <!--##################-->
+    <!-- Main Header area -->
+    <!--##################-->
+    <div id="head" class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div id="storelogo" class="col-lg-4">
+                    <img src="http://d3upwncywg1ue2.cloudfront.net/SPF/images/logo.png" alt="store logo"> 
+                </div>
+                <div id="info" class="col-lg-offset-2 col-lg-6 text-right">
+                    <div id="right-side">
     <div class="row">
         <div class="col-lg-12">
             <div id="greeting">Welcome to ServerPartsFast eBay Store</div>
@@ -743,33 +728,33 @@ ul.categories li:first-child:hover,
         </div>
     </div>
 </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- End Main Header area -->
+    </div>
+    <!-- End Main Header area -->
 
-        <!-- Header underline  -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="header-line" class="accent-color"></div>
-            </div>
+    <!-- Header underline  -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="header-line" class="accent-color"></div>
         </div>
-        <!-- End Header underline  -->
+    </div>
+    <!-- End Header underline  -->
 
 
-        <!--####################-->
-        <!-- Main Template body -->
-        <!--####################-->
-        <div id="main" class="row">
+    <!--####################-->
+    <!-- Main Template body -->
+    <!--####################-->
+    <div id="main" class="row">
 
-            <!--##################-->
-            <!-- Side bar box out -->
-            <!--##################-->
-            <div id="side-box" class="col-lg-3 fill-height ">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="boxtitle">Store Categories</div>
+        <!--##################-->
+        <!-- Side bar box out -->
+        <!--##################-->
+        <div id="side-box" class="col-lg-3 fill-height ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="boxtitle">Store Categories</div>
 <div id="categories">
     <div class="boxlinks">
         <a href="http://stores.ebay.com/ServerPartsFast/Server-Hard-Drives-/_i.html?_fsub=7282067010" target="_top">Server - Hard Drives</a>
@@ -851,41 +836,41 @@ ul.categories li:first-child:hover,
         </div>
     </div>
 </div>
-                    </div>
                 </div>
             </div>
-            <!-- End Side bar box out-->
+        </div>
+        <!-- End Side bar box out-->
 
-            <!--##############-->
-            <!-- Main box out -->
-            <!--##############-->
-            <div id="main-box" class="col-lg-9 ">
+        <!--##############-->
+        <!-- Main box out -->
+        <!--##############-->
+        <div id="main-box" class="col-lg-9 ">
 
-                <!--#######-->
-                <!-- Title -->
-                <!--#######-->
-                <div class="row">
-                    <div class="col-lg-offset-4 col-lg-4">
-                        <h2 class="text-center">[[Title]]</h2>
-                    </div>
+            <!--#######-->
+            <!-- Title -->
+            <!--#######-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-center">[[Title]]</h3>
                 </div>
-                <!-- End Title -->
+            </div>
+            <!-- End Title -->
 
-                <!--################-->
-                <!-- Main Image box -->
-                <!--################-->
-                <div id="gallery_outer_3">
+            <!--################-->
+            <!-- Main Image box -->
+            <!--################-->
+            <div id="gallery_outer_3">
     <div id="gallery">
         <div class="g_image" data-layout="repeatable" data="[[PictureURL1]]">
             <input id="image-0" checked="" type="radio" name="image-group" autocomplete="off" />
             <label class="thumbimage" for="image-0"> 
-                <li><img src="http://lorempixel.com/500/500/technics/" /> </li>
+                <li><img src="[[PictureURL1]]" /> </li>
             </label>
             <input id="mainimage-0" class="mainimagecb" type="checkbox" />
             <label class="mainimage" for="mainimage-0"> 
                 <div>
                     <label class="leftarrow" for="image--1"><span></span></label>
-                    <img src="http://lorempixel.com/500/500/technics/" />
+                    <img src="[[PictureURL1]]" />
                     <label class="rightarrow" for="image-1" data-next-image="[[PictureURL2]]"><span></span></label> 
                 </div>
             </label>
@@ -893,13 +878,13 @@ ul.categories li:first-child:hover,
         <div class="g_image" data-layout="repeatable" data="[[PictureURL2]]">
             <input id="image-1" type="radio" name="image-group" autocomplete="off" />
             <label class="thumbimage" for="image-1"> 
-                <li><img src="http://lorempixel.com/500/500/technics/" /> </li>
+                <li><img src="[[PictureURL2]]" /> </li>
             </label>
             <input id="mainimage-1" class="mainimagecb" type="checkbox" />
             <label class="mainimage" for="mainimage-1"> 
                 <div>
                     <label class="leftarrow" for="image-0"><span></span></label>
-                    <img src="http://lorempixel.com/500/500/technics/" />
+                    <img src="[[PictureURL2]]" />
                     <label class="rightarrow" for="image-2" data-next-image="[[PictureURL3]]"><span></span></label> 
                 </div>
             </label>
@@ -907,170 +892,170 @@ ul.categories li:first-child:hover,
         <div class="g_image" data-layout="repeatable" data="[[PictureURL3]]">
             <input id="image-2" type="radio" name="image-group" autocomplete="off" />
             <label class="thumbimage" for="image-2"> 
-                <li><img src="http://lorempixel.com/500/500/technics/" /> </li>
+                <li><img src="[[PictureURL3]]" /> </li>
             </label>
             <input id="mainimage-2" class="mainimagecb" type="checkbox" />
             <label class="mainimage" for="mainimage-2"> 
                 <div>
                     <label class="leftarrow" for="image-1"><span></span></label>
-                    <img src="http://lorempixel.com/500/500/technics/" />
+                    <img src="[[PictureURL3]]" />
                     <label class="rightarrow" for="image-3" data-next-image=""><span></span></label> 
                 </div>
             </label>
         </div>
     </div>
 </div>
-                <!-- End Main Image box -->
+            <!-- End Main Image box -->
 
-                <!--#####################-->
-                <!-- Middle Content Area -->
-                <!--#####################-->
-                <div class="row">
-                    <div class="col-lg-12" id="content-area">
+            <!--#####################-->
+            <!-- Middle Content Area -->
+            <!--#####################-->
+            <div class="row">
+                <div class="col-lg-12" id="content-area">
 
-                        <!--#####################-->
-                        <!-- Specifications Area -->
-                        <!--#####################-->
+                    <!--#####################-->
+                    <!-- Specifications Area -->
+                    <!--#####################-->
 
-                        <div class="row">
-                            <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
 
-                                <!--##############-->
-                                <!-- Specs Header -->
-                                <!--##############-->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div id="specs-header" class="head-title">
-                                            <h2>Item Specifications</h2>
-                                        </div>
+                            <!--##############-->
+                            <!-- Specs Header -->
+                            <!--##############-->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div id="specs-header" class="head-title">
+                                        <h2>Item Specifications</h2>
                                     </div>
-                                </div>
-                                <!-- End Specs Header -->
-
-                                <!--############-->
-                                <!-- Specs Body -->
-                                <!--############-->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div id="spec-body" class="">
-                                            [[SPF-specs]]
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Specs Body -->
-
-                            </div>
-                        </div>
-                        <!-- End Specifications Area -->
-
-                        <!--##################-->
-                        <!-- Description Area -->
-                        <!--##################-->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div id="description-area">
-                                    <!--####################-->
-                                    <!-- Description Header -->
-                                    <!--####################-->
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div id="description-header" class="head-title">
-                                                <h2>Item Description</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Description Header -->
-
-                                    <!--##################-->
-                                    <!-- Description Body -->
-                                    <!--##################-->
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div id="description-body" class="lead ">
-                                                [[Description]]
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Description Body -->
                                 </div>
                             </div>
+                            <!-- End Specs Header -->
+
+                            <!--############-->
+                            <!-- Specs Body -->
+                            <!--############-->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div id="spec-body" class="">
+                                        [[SPF-specs]]
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Specs Body -->
+
                         </div>
-                        <!-- End Description Area -->
+                    </div>
+                    <!-- End Specifications Area -->
 
-                        <!--##################-->
-                        <!-- Info Area -->
-                        <!--##################-->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div id="info-area">
+                    <!--##################-->
+                    <!-- Description Area -->
+                    <!--##################-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="description-area">
+                                <!--####################-->
+                                <!-- Description Header -->
+                                <!--####################-->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div id="description-header" class="head-title">
+                                            <h2>Item Description</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Description Header -->
 
-                                    <!--#############-->
-                                    <!-- Tabbed Area -->
-                                    <!--#############-->
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div id="tabs" class="text-center ">
-                                                <div class="tabbed-area">
-                                                    <div class="row">
-                                                        <!-- About Tab -->
-                                                        <div class="col-lg-3">
-                                                            <input type="radio" name="tabs" id="about-tab" checked/>
-                                                            <label for="about-tab">About</label>
-                                                            <div id="terms4" class="tab-content">
-                                                                <p>[[SMS-About-Us]]</p>
-                                                            </div>
+                                <!--##################-->
+                                <!-- Description Body -->
+                                <!--##################-->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div id="description-body" class="lead ">
+                                            [[Description]]
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Description Body -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Description Area -->
+
+                    <!--##################-->
+                    <!-- Info Area -->
+                    <!--##################-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="info-area">
+
+                                <!--#############-->
+                                <!-- Tabbed Area -->
+                                <!--#############-->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div id="tabs" class="text-center ">
+                                            <div class="tabbed-area">
+                                                <div class="row">
+                                                    <!-- About Tab -->
+                                                    <div class="col-lg-3">
+                                                        <input type="radio" name="tabs" id="about-tab" checked/>
+                                                        <label for="about-tab">About</label>
+                                                        <div id="terms4" class="tab-content">
+                                                            <p>[[SMS-About-Us]]</p>
                                                         </div>
-                                                        <!-- Shipping Tab -->
-                                                        <div class="col-lg-3">
-                                                            <input type="radio" name="tabs" id="shipping-tab"/>
-                                                            <label for="shipping-tab">Shipping</label>
-                                                            <div id="terms1" class="tab-content">
-                                                                <p>[[SMS-Shipping]]</p>
-                                                            </div>
+                                                    </div>
+                                                    <!-- Shipping Tab -->
+                                                    <div class="col-lg-3">
+                                                        <input type="radio" name="tabs" id="shipping-tab"/>
+                                                        <label for="shipping-tab">Shipping</label>
+                                                        <div id="terms1" class="tab-content">
+                                                            <p>[[SMS-Shipping]]</p>
                                                         </div>
-                                                        <!-- Terms Tab -->
-                                                        <div class="col-lg-3">
-                                                            <input type="radio" name="tabs" id="terms-tab" />
-                                                            <label for="terms-tab">Terms</label>
-                                                            <div id="terms2" class="tab-content">
-                                                                <p>[[SMS-Terms]]</p>
-                                                            </div>
+                                                    </div>
+                                                    <!-- Terms Tab -->
+                                                    <div class="col-lg-3">
+                                                        <input type="radio" name="tabs" id="terms-tab" />
+                                                        <label for="terms-tab">Terms</label>
+                                                        <div id="terms2" class="tab-content">
+                                                            <p>[[SMS-Terms]]</p>
                                                         </div>
-                                                        <!-- Payment Tab -->
-                                                        <div class="col-lg-3">
-                                                            <input type="radio" name="tabs" id="payment-tab" />
-                                                            <label for="payment-tab">Payment</label>
-                                                            <div id="terms3" class="tab-content">
-                                                                <p>[[SMS-Payment]]</p>
-                                                            </div>
+                                                    </div>
+                                                    <!-- Payment Tab -->
+                                                    <div class="col-lg-3">
+                                                        <input type="radio" name="tabs" id="payment-tab" />
+                                                        <label for="payment-tab">Payment</label>
+                                                        <div id="terms3" class="tab-content">
+                                                            <p>[[SMS-Payment]]</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- End Tabbed Area -->
                                 </div>
+                                <!-- End Tabbed Area -->
                             </div>
                         </div>
-                        <!-- End Info Area -->
                     </div>
-                    <!-- End Middle Content Area -->
-
-
+                    <!-- End Info Area -->
                 </div>
-                <!-- End Main box out -->
+                <!-- End Middle Content Area -->
+
 
             </div>
-        </div>
-            <!-- End Main Template Body -->
+            <!-- End Main box out -->
 
-            <!--######################-->
-            <!-- Footer Content Block -->
-            <!--######################-->
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="footer-block">
+        </div>
+    </div>
+        <!-- End Main Template Body -->
+
+        <!--######################-->
+        <!-- Footer Content Block -->
+        <!--######################-->
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="footer-block">
     <div class="row">
         <div class="col-lg-5">
             <div class="black-line"></div>
@@ -1080,7 +1065,7 @@ ul.categories li:first-child:hover,
                 <img src="images/truck.png" alt="SPF Truck logo" >
             </div>
         </div>
-        <div class="col-lg-5 fill-height">
+        <div class="col-lg-5">
             <div class="black-line"></div>
         </div>
     </div>
@@ -1093,10 +1078,10 @@ ul.categories li:first-child:hover,
                         <div class="text-center cert-logos">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="images/vmwarecp.png" alt="vmware certified" class="cert-logos">
+                                    <img src="http://d3upwncywg1ue2.cloudfront.net/SPF/images/vmwarecp.png" alt="vmware certified" class="cert-logos">
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="images/MS-Reg-Refurb.jpg" alt="vmware certified" class="cert-logos">
+                                    <img src="http://d3upwncywg1ue2.cloudfront.net/SPF/images/MS-Reg-Refurb.jpg" alt="vmware certified" class="cert-logos">
                                 </div>
                             </div>
                         </div>
@@ -1112,7 +1097,7 @@ ul.categories li:first-child:hover,
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="text-center" id="slogan">
-                                    <img src="images/slogan.png" alt="you need it. we have it.">
+                                    <img src="http://d3upwncywg1ue2.cloudfront.net/SPF/images/slogan.png" alt="you need it. we have it.">
                                 </div>
                             </div>
                         </div>
@@ -1144,20 +1129,17 @@ ul.categories li:first-child:hover,
         </div>
     </div>
 </div>
-            </div>
         </div>
-            <!-- End Footer Content Block -->
-
-            <!--#################-->
-            <!-- Meta Info Block -->
-            <!--#################-->
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="meta-data">[[ItemInfo]] [[QuoteID_If]]</div>
-            </div>
-        </div>
-        <!-- End Meta Info Block -->
     </div>
-</body>
+        <!-- End Footer Content Block -->
 
-</html>
+        <!--#################-->
+        <!-- Meta Info Block -->
+        <!--#################-->
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="meta-data">[[ItemInfo]] [[QuoteID_If]]</div>
+        </div>
+    </div>
+    <!-- End Meta Info Block -->
+</div>

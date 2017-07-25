@@ -122,7 +122,7 @@ input {
 
     /*   padding: 10px 40px 0px 5px; */
     text-align: right;
-    height: 40px;
+    height: 43px;
     width: 100%;
     /*   display: inline-block; */
 }
@@ -683,4 +683,8 @@ ul.categories li:first-child:hover,
 #gallery_outer_2 .g_image[data*="<!-- missing"],
 #gallery_outer_3 .g_image[data*="<!-- missing"] {
     display: none;
+}
+
+tr:nth-child(even) {
+    background: #eee;
 }
