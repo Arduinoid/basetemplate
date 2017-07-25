@@ -29,6 +29,116 @@
     margin-top: 5%;
 }
 
+/******************/
+/* OLD TAB STYLES */
+/******************/
+div#tabs {
+    margin: 10px 0px 0px 0px;
+    display: block;
+}
+
+div#tabs [type=radio] {
+    display: none;
+}
+
+div#tabs label.mobile_tab {
+    display: none;
+}
+
+div#tabs label li {
+    font-size: 16px;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    border-radius: 0px 0px 0px 0px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 19.8%;
+    text-align: center;
+    background: #000;
+    padding: 8px 0px;
+    margin-right: 1px;
+    transition: all 0.5s;
+}
+
+div#tabs label li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div#tabs [type=radio]:checked+label li,
+div#tabs label li:hover {
+    background: #fdd03d;
+}
+
+div#tabs [type=radio]:checked+label li,
+div#tabs label li:hover,
+div#tabs [type=radio]:checked+label li a,
+div#tabs label li:hover a {
+    color: #fff;
+}
+
+div#tabs label li:hover {
+    opacity: 0.8;
+}
+
+div#tabs [type=radio]:checked+label li:hover {
+    opacity: 1;
+}
+
+div#tabs #tab-1:checked~.content1,
+div#tabs #tab-2:checked~.content2,
+div#tabs #tab-3:checked~.content3,
+div#tabs #tab-4:checked~.content4,
+div#tabs #tab-5:checked~.content5 {
+    display: block;
+}
+
+div#tabs #tab-1:checked~.content1 .tabcontent,
+div#tabs #tab-2:checked~.content2 .tabcontent,
+div#tabs #tab-3:checked~.content3 .tabcontent,
+div#tabs #tab-4:checked~.content4 .tabcontent,
+div#tabs #tab-5:checked~.content5 .tabcontent,
+div#tabs #tab-1:checked~.content1 h4,
+div#tabs #tab-2:checked~.content2 h4,
+div#tabs #tab-3:checked~.content3 h4,
+div#tabs #tab-4:checked~.content4 h4,
+div#tabs #tab-5:checked~.content5 h4 {
+    animation-name: tabIn;
+    animation-duration: 1.2s;
+}
+
+div#tabs .content {
+    border-radius: 0px 0px 0px 0px;
+    animation-duration: 0.5s;
+    clear: both;
+    padding: 10px;
+    border: none;
+    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_boxcontent3.png");
+    display: none;
+}
+
+div#tabs .content h4.tabtitle {
+    display: none;
+}
+
+div#tabs .content .tabcontent {
+    white-space: pre-wrap;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2em;
+    display: block;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+}
+
+div#tabs label li a {
+    display: block;
+    pointer-events: none;
+}
+
+/* END OLD TAB STYLES */
+
+
+
 /*************/
 /* TAB STYLE */
 /*************/
