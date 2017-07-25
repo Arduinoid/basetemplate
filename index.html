@@ -165,7 +165,7 @@ input {
 #shipping-tab+label {
     display: inline-block;
     height: 33px;
-    width: 100%;
+    width: 25%;
     background-color: black;
 }
 
@@ -176,7 +176,7 @@ input {
 #terms-tab+label {
     display: inline-block;
     height: 33px;
-    width: 100%;
+    width: 25%;
     background-color: black;
 }
 
@@ -187,7 +187,7 @@ input {
 #payment-tab+label {
     display: inline-block;
     height: 33px;
-    width: 100%;
+    width: 25%;
     background-color: black;
 }
 
@@ -198,7 +198,7 @@ input {
 #about-tab+label {
     display: inline-block;
     height: 33px;
-    width: 100%;
+    width: 25%;
     background-color: black;
 }
 
@@ -1108,36 +1108,28 @@ tr:nth-child(even) {
             <div class="tabbed-area">
                 <div class="row">
                     <!-- About Tab -->
-                    <div class="col-lg-3">
-                        <input type="radio" name="tabs" id="about-tab" checked/>
-                        <label for="about-tab">About</label>
-                        <div id="terms4" class="tab-content">
-                            <p>[[SMS-About-Us]]</p>
-                        </div>
-                    </div>
+                    <input type="radio" name="tabs" id="about-tab" checked/>
+                    <label for="about-tab" class="col-lg-3">About</label>
                     <!-- Shipping Tab -->
-                    <div class="col-lg-3">
-                        <input type="radio" name="tabs" id="shipping-tab"/>
-                        <label for="shipping-tab">Shipping</label>
-                        <div id="terms1" class="tab-content">
-                            <p>[[SMS-Shipping]]</p>
-                        </div>
-                    </div>
+                    <input type="radio" name="tabs" id="shipping-tab"/>
+                    <label for="shipping-tab" class="col-lg-3">Shipping</label>
                     <!-- Terms Tab -->
-                    <div class="col-lg-3">
-                        <input type="radio" name="tabs" id="terms-tab" />
-                        <label for="terms-tab">Terms</label>
-                        <div id="terms2" class="tab-content">
-                            <p>[[SMS-Terms]]</p>
-                        </div>
+                    <input type="radio" name="tabs" id="terms-tab" />
+                    <label for="terms-tab" class="col-lg-3">Terms</label>
+                    <input type="radio" name="tabs" id="payment-tab" />
+                    <label for="payment-tab" class="col-lg-3">Payment</label>
+                    <div id="terms4" class="tab-content">
+                        <p>[[SMS-About-Us]]</p>
+                    </div>
+                    <div id="terms1" class="tab-content">
+                        <p>[[SMS-Shipping]]</p>
+                    </div>
+                    <div id="terms2" class="tab-content">
+                        <p>[[SMS-Terms]]</p>
                     </div>
                     <!-- Payment Tab -->
-                    <div class="col-lg-3">
-                        <input type="radio" name="tabs" id="payment-tab" />
-                        <label for="payment-tab">Payment</label>
-                        <div id="terms3" class="tab-content">
-                            <p>[[SMS-Payment]]</p>
-                        </div>
+                    <div id="terms3" class="tab-content">
+                        <p>[[SMS-Payment]]</p>
                     </div>
                 </div>
             </div>
@@ -1172,7 +1164,7 @@ tr:nth-child(even) {
         </div>
         <div class="col-lg-2">
             <div id="truck-logo" class="text-center">
-                <img src="images/truck.png" alt="SPF Truck logo" >
+                <img src="http://d3upwncywg1ue2.cloudfront.net/SPF/images/truck.png" alt="SPF Truck logo" >
             </div>
         </div>
         <div class="col-lg-5">
