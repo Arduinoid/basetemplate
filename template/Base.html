@@ -153,48 +153,7 @@
                                 <!--#############-->
                                 <!-- Tabbed Area -->
                                 <!--#############-->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div id="tabs" class="text-center ">
-                                            <div class="tabbed-area">
-                                                <div class="row">
-                                                    <!-- About Tab -->
-                                                    <div class="col-lg-3">
-                                                        <input type="radio" name="tabs" id="about-tab" checked/>
-                                                        <label for="about-tab">About</label>
-                                                        <div id="terms4" class="tab-content">
-                                                            <p>[[SMS-About-Us]]</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Shipping Tab -->
-                                                    <div class="col-lg-3">
-                                                        <input type="radio" name="tabs" id="shipping-tab"/>
-                                                        <label for="shipping-tab">Shipping</label>
-                                                        <div id="terms1" class="tab-content">
-                                                            <p>[[SMS-Shipping]]</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Terms Tab -->
-                                                    <div class="col-lg-3">
-                                                        <input type="radio" name="tabs" id="terms-tab" />
-                                                        <label for="terms-tab">Terms</label>
-                                                        <div id="terms2" class="tab-content">
-                                                            <p>[[SMS-Terms]]</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Payment Tab -->
-                                                    <div class="col-lg-3">
-                                                        <input type="radio" name="tabs" id="payment-tab" />
-                                                        <label for="payment-tab">Payment</label>
-                                                        <div id="terms3" class="tab-content">
-                                                            <p>[[SMS-Payment]]</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {% include 'snippets/tabs.html' %}
                                 <!-- End Tabbed Area -->
                             </div>
                         </div>
