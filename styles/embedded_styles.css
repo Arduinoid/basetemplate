@@ -2,6 +2,10 @@
     border-left: solid lightgrey 5px;
 }
 
+#main-logo {
+    height: 75px;
+}
+
 .accent-color {
     background: {{ colors.primary }};
     border: solid darkgrey 1px;
