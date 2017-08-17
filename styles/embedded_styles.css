@@ -1,5 +1,5 @@
 #main-box {
-    border-left: solid lightgrey 5px;
+    /* border-left: solid lightgrey 5px; */
 }
 
 #main-logo {
@@ -184,6 +184,10 @@ input {
 /*******************/
 /* Side Bar Styles */
 /*******************/
+
+#side-box {
+    border-right: solid lightgrey 5px;
+}
 
 .boxtitle {
     background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");

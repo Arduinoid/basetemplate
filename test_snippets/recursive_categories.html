@@ -1,0 +1,7 @@
+{%- from 'macros.html' import recursive_categories %}
+<div class="boxtitle">Store Categories</div>
+<div id="categories">
+    <div class="boxlinks">
+        {{ recursive_categories(categories) }}
+    </div>
+</div>

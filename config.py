@@ -5,7 +5,8 @@ from utils.my_functions import *
 main_dir = os.path.dirname(os.path.abspath(__file__))
 
 def build_payload():
-    categories_file = 'content\\categories.json'
+    # categories_file = 'content\\categories.json'
+    categories_file = 'other\\test_sub.json'
     content_file = 'content\\content.json'
     colors_file = 'content\\colors.json'
 

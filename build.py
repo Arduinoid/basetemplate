@@ -3,7 +3,7 @@ import os
 from jinja2 import Environment, FileSystemLoader
 from config import context_data
 
-ENV = Environment(loader=FileSystemLoader(['./template','./snippets','./styles','./test_snippets']))
+ENV = Environment(loader=FileSystemLoader(['./template','./snippets','./styles','./test_snippets','./utils']))
 
 t = ENV.get_template('Base.html')
 
