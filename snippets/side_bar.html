@@ -1,15 +1,7 @@
+{%- from 'macros.html' import recursive_categories %}
 <div class="boxtitle">Store Categories</div>
 <div id="categories">
     <div class="boxlinks">
-        {%- for category in categories %}
-        <a href="{{ category['link'] }}" target="_top">{{ category['name'] }}</a>
-        {%- if category['sub'] != None %}
-        <div class="sub-cat">
-        {%- for sub in category['sub'] %}
-            <a href="{{ sub['link'] }}">{{ sub['name'] }}</a>
-        {%- endfor %}
-        </div>
-        {%- endif %}
-        {%- endfor %}
+        {{ recursive_categories(categories) }}
     </div>
 </div>
