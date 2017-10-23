@@ -1,8 +1,8 @@
 {
-    "store": "ServerSuperStore",
-    "store_logo": "",
-    "bottom_logo": "",
-    "slogan_image": "",
+    "store": "ServerPartsFast",
+    "store_logo": "https://d3upwncywg1ue2.cloudfront.net/SPF/images/logo.png",
+    "bottom_logo": "https://d3upwncywg1ue2.cloudfront.net/SPF/images/truck.png",
+    "slogan_image": "https://d3upwncywg1ue2.cloudfront.net/SPF/images/slogan.png",
     "slogan": "Our Goal is 100% Satisfaction!",
-    "snippet_tag": "SSS"
+    "snippet_tag": "SPF"
 }

@@ -1,34 +1,33 @@
 <div id="footer-block">
     <div class="row">
-        <div class="col-lg-5">
+        <div class="col-md-5">
             <div class="black-line"></div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-md-2">
             <div id="truck-logo" class="text-center">
                 {%- if content.bottom_logo %}
-                <img src="{{ content.bottom_logo }}" alt="" class="img-responsive">
-                {%- else %}
+                <img src="{{ content.bottom_logo }}" alt="" class="img-responsive"> {%- else %}
                 <h4>{{ content.store }}</h4>
                 {%- endif %}
             </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-md-5">
             <div class="black-line"></div>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-offset-1 col-lg-10">
+        <div class="col-md-offset-1 col-md-10">
             <div id="footer-content">
                 <div class="row">
                     <!-- Left side content  -->
-                    <div id="left-foot" class="col-lg-4">
+                    <div id="left-foot" class="col-md-4">
                         <div class="text-center cert-logos">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <img src="http://d3upwncywg1ue2.cloudfront.net/SPF/images/vmwarecp.png" alt="vmware certified" class="cert-logos">
+                                <div class="col-md-6">
+                                    <img src="https://d3upwncywg1ue2.cloudfront.net/SPF/images/vmwarecp.png" alt="vmware certified" class="cert-logos">
                                 </div>
-                                <div class="col-lg-6">
-                                    <img src="http://d3upwncywg1ue2.cloudfront.net/SPF/images/MS-Reg-Refurb.jpg" alt="vmware certified" class="cert-logos">
+                                <div class="col-md-6">
+                                    <img src="https://d3upwncywg1ue2.cloudfront.net/SPF/images/MS-Reg-Refurb.jpg" alt="vmware certified" class="cert-logos">
                                 </div>
                             </div>
                         </div>
@@ -36,14 +35,14 @@
                     <!-- End Left side content  -->
 
                     <!-- Center Content -->
-                    <div id="center-foot" class="col-lg-4">
+                    <div id="center-foot" class="col-md-4">
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-md-12">
                             </div>
                         </div>
                         {% if content.slogan != '' %}
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-md-12">
                                 <div class="text-center" id="slogan">
                                     <img src="{{ content.slogan_image }}" alt="">
                                 </div>
@@ -51,9 +50,9 @@
                         </div>
                         {% endif %}
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-md-12">
                                 <div class="text-center">
-                                {% include 'payment.html' %}
+                                    {% include 'payment.html' %}
                                 </div>
                             </div>
                         </div>
@@ -61,7 +60,7 @@
                     <!-- End Center Content -->
 
                     <!-- Right side content  -->
-                    <div id="right-foot" class="col-lg-4">
+                    <div id="right-foot" class="col-md-4">
                         <div class="text-center h4">
                             <strong>Our Goal is 100% Satisfaction!</strong>
                         </div>
@@ -71,4 +70,13 @@
             </div>
         </div>
     </div>
+    <!--#################-->
+    <!-- Meta Info Block -->
+    <!--#################-->
+    <div class="row">
+        <div class="col-md-12">
+            <div id="meta-data">[[ItemInfo]] [[QuoteID_If]]</div>
+        </div>
+    </div>
+    <!-- End Meta Info Block -->
 </div>

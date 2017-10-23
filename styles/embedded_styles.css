@@ -1,9 +1,26 @@
-#main-box {
-    /* border-left: solid lightgrey 5px; */
+#main {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
 }
 
 #main-logo {
     height: 75px;
+}
+
+#meta-data {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#middle-line {
+    float: left;
+    width: 5px;
+    margin-left: -15px;
+    background-color: {{ colors.accent }};
 }
 
 .accent-color {
@@ -185,12 +202,9 @@ input {
 /* Side Bar Styles */
 /*******************/
 
-#side-box {
-    border-right: solid lightgrey 5px;
-}
 
 .boxtitle {
-    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
+    background: url("https://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
     color: #fff;
     height: 30px;
     padding: 1px 10px;
@@ -250,7 +264,7 @@ ul.categories li a,
 
 ul.categories li a:hover,
 .boxlinks a:hover {
-    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linkover.png");
+    background: url("https://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linkover.png");
     color: #fff;
     border-top: none;
     border-bottom: none;
@@ -272,7 +286,7 @@ ul.categories li:first-child:hover,
 .categories .boxtitle,
 .categories h2.boxtitle,
 .pages .boxtitle {
-    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
+    background: url("https://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
     color: #fff;
     height: 30px;
     padding: 1px 10px;
@@ -695,5 +709,5 @@ ul.categories li:first-child:hover,
 }
 
 tr:nth-child(even) {
-    background: #eee;
+    background: #ddd;
 }

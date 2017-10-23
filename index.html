@@ -1,14 +1,31 @@
 <style>
-    #main-box {
-    /* border-left: solid lightgrey 5px; */
+    #main {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
 }
 
 #main-logo {
     height: 75px;
 }
 
+#meta-data {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#middle-line {
+    float: left;
+    width: 5px;
+    margin-left: -15px;
+    background-color: lightgrey;
+}
+
 .accent-color {
-    background: #e9ec00;
+    background: #fdd03d;
     border: solid darkgrey 1px;
 }
 
@@ -24,7 +41,7 @@
 }
 
 .black-line {
-    background: #444;
+    background: #000;
     height: 5px;
     margin-top: 5%;
 }
@@ -59,44 +76,44 @@ input {
     display: inline-block;
     height: 33px;
     width: 25%;
-    background-color: #444;
+    background-color: #000;
 }
 
 #shipping-tab:checked+label {
-    background-color: #e9ec00;
+    background-color: #fdd03d;
 }
 
 #terms-tab+label {
     display: inline-block;
     height: 33px;
     width: 25%;
-    background-color: #444;
+    background-color: #000;
 }
 
 #terms-tab:checked+label {
-    background-color: #e9ec00;
+    background-color: #fdd03d;
 }
 
 #payment-tab+label {
     display: inline-block;
     height: 33px;
     width: 25%;
-    background-color: #444;
+    background-color: #000;
 }
 
 #payment-tab:checked+label {
-    background-color: #e9ec00;
+    background-color: #fdd03d;
 }
 
 #about-tab+label {
     display: inline-block;
     height: 33px;
     width: 25%;
-    background-color: #444;
+    background-color: #000;
 }
 
 #about-tab:checked+label {
-    background-color: #e9ec00;
+    background-color: #fdd03d;
 }
 
 #shipping-tab:checked~.tab-content#terms1,
@@ -186,12 +203,9 @@ input {
 /* Side Bar Styles */
 /*******************/
 
-#side-box {
-    border-right: solid lightgrey 5px;
-}
 
 .boxtitle {
-    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
+    background: url("https://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
     color: #fff;
     height: 30px;
     padding: 1px 10px;
@@ -251,7 +265,7 @@ ul.categories li a,
 
 ul.categories li a:hover,
 .boxlinks a:hover {
-    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linkover.png");
+    background: url("https://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linkover.png");
     color: #fff;
     border-top: none;
     border-bottom: none;
@@ -273,7 +287,7 @@ ul.categories li:first-child:hover,
 .categories .boxtitle,
 .categories h2.boxtitle,
 .pages .boxtitle {
-    background: url("http://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
+    background: url("https://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
     color: #fff;
     height: 30px;
     padding: 1px 10px;
@@ -696,7 +710,7 @@ ul.categories li:first-child:hover,
 }
 
 tr:nth-child(even) {
-    background: #eee;
+    background: #ddd;
 }
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -706,20 +720,20 @@ tr:nth-child(even) {
     <!-- Main Header area -->
     <!--##################-->
     <div id="welcome" class="row">
-        <div class="col-lg-offset-6 col-lg-6">
-            <div id="greeting" class="text-right">Welcome to ServerSuperStore eBay Store</div>
+        <div class="col-md-offset-6 col-md-6">
+            <div id="greeting" class="text-right">Welcome to ServerPartsFast eBay Store</div>
         </div>
     </div>
     <div id="head" class="row">
-        <div class="col-lg-12">
+        <div class="col-md-12">
             <div class="row">
-                <div id="storelogo" class="col-md-4">
-                    <h1>ServerSuperStore</h1>
+                <div id="storelogo" class="col-md-4 col-sm-4">
+                    <img src="https://d3upwncywg1ue2.cloudfront.net/SPF/images/logo.png" alt="store logo" id="main-logo">
                 </div>
-                <div id="info" class="col-md-offset-2 col-md-6 text-right">
+                <div id="info" class="col-md-offset-2 col-sm-offset-2 col-md-6 col-sm-6 text-right">
                     <div id="right-side">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-md-12">
             <div id="payment">
     <div id="paypal" class="small-card"></div>
     <div id="visa" class="small-card"></div>
@@ -730,7 +744,7 @@ tr:nth-child(even) {
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-md-12">
             <div id="call">
                 <p>Our Goal is 100% Satisfaction!</p>
             </div>
@@ -745,7 +759,7 @@ tr:nth-child(even) {
 
     <!-- Header underline  -->
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-md-12">
             <div id="header-line" class="accent-color"></div>
         </div>
     </div>
@@ -769,57 +783,153 @@ tr:nth-child(even) {
 <div id="categories">
     <div class="boxlinks">
         
-    <a href="http://stores.ebay.com/Server-Pallets/Dell-PowerEdge-Servers-/_i.html?_fsub=33050207011" target="_top">Dell PowerEdge Servers</a>
+    <a href="https://stores.ebay.com/ServerPartsFast/Server-Hard-Drives-/_i.html?_fsub=7282067010" target="_blank">Server - Hard Drives</a>
             <div class="sub-cat">
                 
-    <a href="http://stores.ebay.com/Server-Pallets/1950-2-5-Servers-/_i.html?_fsub=33050208011" target="_top">1950 2.5 Servers</a>
-            <div class="sub-cat">
-                
-    <a href="http://stores.ebay.com/Server-Pallets/1-60GHz-Dual-5110-/_i.html?_fsub=33050233011" target="_top">1.60GHz Dual 5110</a>
+    <a href="https://stores.ebay.com/ServerPartsFast/SAS-2-5-Hard-Drives-/_i.html?_fsub=19417892010" target="_blank">SAS - 2.5" Hard Drives</a>
             <div class="sub-cat">
                 
             </div>
-    <a href="http://stores.ebay.com/Server-Pallets/2-00GHz-Dual-5130-/_i.html?_fsub=33050234011" target="_top">2.00GHz Dual 5130</a>
+    <a href="https://stores.ebay.com/ServerPartsFast/SAS-3-5-Hard-Drives-/_i.html?_fsub=19417893010" target="_blank">SAS - 3.5" Hard Drives</a>
             <div class="sub-cat">
                 
             </div>
-    <a href="http://stores.ebay.com/Server-Pallets/2-33GHz-Dual-5140-/_i.html?_fsub=33050235011" target="_top">2.33GHz Dual 5140</a>
+    <a href="https://stores.ebay.com/ServerPartsFast/SATA-3-5-Hard-Drives-/_i.html?_fsub=19417895010" target="_blank">SATA - 3.5" Hard Drives</a>
             <div class="sub-cat">
                 
             </div>
-    <a href="http://stores.ebay.com/Server-Pallets/2-33GHz-Quad-E5410-/_i.html?_fsub=33050237011" target="_top">2.33GHz Quad E5410</a>
+    <a href="https://stores.ebay.com/ServerPartsFast/SCSI-Drives-/_i.html?_fsub=7282273010" target="_blank">SCSI Drives</a>
             <div class="sub-cat">
                 
             </div>
-    <a href="http://stores.ebay.com/Server-Pallets/2-50GHz-Quad-E5420-/_i.html?_fsub=33050238011" target="_top">2.50GHz Quad E5420</a>
-            <div class="sub-cat">
-                
-            </div>
-    <a href="http://stores.ebay.com/Server-Pallets/2-50GHz-Quad-L5420-/_i.html?_fsub=33050241011" target="_top">2.50GHz Quad L5420</a>
-            <div class="sub-cat">
-                
-            </div>
-    <a href="http://stores.ebay.com/Server-Pallets/2-83GHz-Quad-E5440-/_i.html?_fsub=33050239011" target="_top">2.83GHz Quad E5440</a>
-            <div class="sub-cat">
-                
-            </div>
-    <a href="http://stores.ebay.com/Server-Pallets/3-00GHz-Dual-5160-/_i.html?_fsub=33050236011" target="_top">3.00GHz Dual 5160</a>
-            <div class="sub-cat">
-                
-            </div>
-    <a href="http://stores.ebay.com/Server-Pallets/3-00GHz-Quad-X5450-/_i.html?_fsub=33050240011" target="_top">3.00GHz Quad X5450</a>
-            <div class="sub-cat">
-                
-            </div>
-    <a href="http://stores.ebay.com/Server-Pallets/3-20GHz-Dual-5060-/_i.html?_fsub=33050232011" target="_top">3.20GHz Dual 5060</a>
+    <a href="https://stores.ebay.com/ServerPartsFast/Misc-Drives-/_i.html?_fsub=7283355010" target="_blank">Misc Drives</a>
             <div class="sub-cat">
                 
             </div>
             </div>
-    <a href="http://stores.ebay.com/Server-Pallets/R410-Servers-/_i.html?_fsub=33050370011" target="_top">R410 Servers</a>
+    <a href="https://stores.ebay.com/ServerPartsFast/Server-Memory-/_i.html?_fsub=7282068010" target="_blank">Server - Memory</a>
+            <div class="sub-cat">
+                
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC2-3200R-/_i.html?_fsub=19354454010" target="_blank">Memory - PC2-3200R</a>
             <div class="sub-cat">
                 
             </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC2-4200F-/_i.html?_fsub=7282115010" target="_blank">Memory - PC2-4200F</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC2-4200R-/_i.html?_fsub=7282134010" target="_blank">Memory - PC2-4200R</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC2-5300F-/_i.html?_fsub=7282116010" target="_blank">Memory - PC2-5300F</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC2-5300P-/_i.html?_fsub=19354453010" target="_blank">Memory - PC2-5300P</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC2-6400P-/_i.html?_fsub=19354455010" target="_blank">Memory - PC2-6400P</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC3-8500E-/_i.html?_fsub=7283360010" target="_blank">Memory - PC3-8500E</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC3-8500R-/_i.html?_fsub=7375734010" target="_blank">Memory - PC3-8500R</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC3-10600E-/_i.html?_fsub=7283362010" target="_blank">Memory - PC3-10600E</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC3-10600R-/_i.html?_fsub=7283361010" target="_blank">Memory - PC3-10600R</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Memory-PC3-12800R-/_i.html?_fsub=19354456010" target="_blank">Memory - PC3-12800R</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Server-Memory-Misc-/_i.html?_fsub=7707869010" target="_blank">Server Memory - Misc</a>
+            <div class="sub-cat">
+                
+            </div>
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Server-Processors-/_i.html?_fsub=7282072010" target="_blank">Server - Processors</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Dell-Server-Parts-/_i.html?_fsub=7281926010" target="_blank">Dell Server Parts</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/HP-Server-Parts-/_i.html?_fsub=7281949010" target="_blank">HP Server Parts</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Accessories-/_i.html?_fsub=7282029010" target="_blank">Accessories</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Backplanes-/_i.html?_fsub=13618240010" target="_blank">Backplanes</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Batteries-/_i.html?_fsub=13788761010" target="_blank">Batteries</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Cards-and-Controllers-/_i.html?_fsub=7282066010" target="_blank">Cards and Controllers</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Disk-Array-Components-/_i.html?_fsub=13782906010" target="_blank">Disk Array Components</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Heatsinks-and-Cooling-/_i.html?_fsub=13647595010" target="_blank">Heatsinks and Cooling</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Motherboards-/_i.html?_fsub=7282070010" target="_blank">Motherboard</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Optical-Drives-/_i.html?_fsub=7282069010" target="_blank">Optical Drives</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Power-Cords-and-PDUs-/_i.html?_fsub=7282065010" target="_blank">Power Cords and PDUs</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Power-Supplies-/_i.html?_fsub=7282071010" target="_blank">Power Supplies</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Racks-Rail-Kits-/_i.html?_fsub=7282073010" target="_blank">Rack & Rail Kits</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/SD-Modules-/_i.html?_fsub=13647301010" target="_blank">SD Modules</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Switches-and-Routers-/_i.html?_fsub=7282074010" target="_blank">Switches and Routers</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Tape-and-Storage-/_i.html?_fsub=7282075010" target="_blank">Tape and Storage</a>
+            <div class="sub-cat">
+                
+            </div>
+    <a href="https://stores.ebay.com/ServerPartsFast/Other-/_i.html?_fsub=1" target="_blank">Other</a>
+            <div class="sub-cat">
+                
             </div>
     </div>
 </div>
@@ -828,6 +938,13 @@ tr:nth-child(even) {
         </div>
         
         <!-- End Side bar box out-->
+
+        <!--################-->
+        <!-- Middle divider -->
+        <!--################-->
+        <div id="middle-line"></div>
+        
+        <!-- End Middle divider -->
 
         <!--##############-->
         <!-- Main box out -->
@@ -838,7 +955,7 @@ tr:nth-child(even) {
             <!-- Title -->
             <!--#######-->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <h3 class="text-center">[[Title]]</h3>
                 </div>
             </div>
@@ -899,20 +1016,20 @@ tr:nth-child(even) {
             <!-- Middle Content Area -->
             <!--#####################-->
             <div class="row">
-                <div class="col-lg-12" id="content-area">
+                <div class="col-md-12" id="content-area">
 
                     <!--#####################-->
                     <!-- Specifications Area -->
                     <!--#####################-->
 
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
 
                             <!--##############-->
                             <!-- Specs Header -->
                             <!--##############-->
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-md-12">
                                     <div id="specs-header" class="head-title">
                                         <h2>Item Specifications</h2>
                                     </div>
@@ -924,7 +1041,7 @@ tr:nth-child(even) {
                             <!-- Specs Body -->
                             <!--############-->
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-md-12">
                                     <div id="spec-body" class="">
                                         [[SPF-specs]]
                                     </div>
@@ -940,13 +1057,13 @@ tr:nth-child(even) {
                     <!-- Description Area -->
                     <!--##################-->
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <div id="description-area">
                                 <!--####################-->
                                 <!-- Description Header -->
                                 <!--####################-->
                                 <div class="row">
-                                    <div class="col-lg-12">
+                                    <div class="col-md-12">
                                         <div id="description-header" class="head-title">
                                             <h2>Item Description</h2>
                                         </div>
@@ -958,7 +1075,7 @@ tr:nth-child(even) {
                                 <!-- Description Body -->
                                 <!--##################-->
                                 <div class="row">
-                                    <div class="col-lg-12">
+                                    <div class="col-md-12">
                                         <div id="description-body" class="lead ">
                                             [[Description]]
                                         </div>
@@ -974,7 +1091,7 @@ tr:nth-child(even) {
                     <!-- Info Area -->
                     <!--##################-->
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <div id="info-area">
 
                                 <!--#############-->
@@ -982,31 +1099,31 @@ tr:nth-child(even) {
                                 <!--#############-->
                                 <div class="row">
     <div class="col-lg-12">
-        <div id="tabs" class="text-center ">
+        <div id="tabs">
             <div class="tabbed-area">
                 <!-- About Tab -->
                 <input type="radio" name="tabs" id="about-tab" checked/>
-                <label for="about-tab" class="col-md-3 col-sm-12">About</label>
+                <label for="about-tab" class="col-md-3 col-sm-12 text-center">About</label>
                 <!-- Shipping Tab -->
                 <input type="radio" name="tabs" id="shipping-tab"/>
-                <label for="shipping-tab" class="col-md-3 col-sm-12">Shipping</label>
+                <label for="shipping-tab" class="col-md-3 col-sm-12 text-center">Shipping</label>
                 <!-- Terms Tab -->
                 <input type="radio" name="tabs" id="terms-tab" />
-                <label for="terms-tab" class="col-md-3 col-sm-12">Terms</label>
+                <label for="terms-tab" class="col-md-3 col-sm-12 text-center">Terms</label>
                 <input type="radio" name="tabs" id="payment-tab" />
-                <label for="payment-tab" class="col-md-3 col-sm-12">Payment</label>
+                <label for="payment-tab" class="col-md-3 col-sm-12 text-center">Payment</label>
                 <div id="terms4" class="tab-content">
-                    <p>[[SSS-About]]</p>
+                    <p>[[SPF-About]]</p>
                 </div>
                 <div id="terms1" class="tab-content">
-                    <p>[[SSS-Shipping]]</p>
+                    <p>[[SPF-Shipping]]</p>
                 </div>
                 <div id="terms2" class="tab-content">
-                    <p>[[SSS-Terms]]</p>
+                    <p>[[SPF-Terms]]</p>
                 </div>
                 <!-- Payment Tab -->
                 <div id="terms3" class="tab-content">
-                    <p>[[SSS-Payment]]</p>
+                    <p>[[SPF-Payment]]</p>
                 </div>
             </div>
         </div>
@@ -1032,34 +1149,34 @@ tr:nth-child(even) {
         <!-- Footer Content Block -->
         <!--######################-->
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-md-12">
             <div id="footer-block">
     <div class="row">
-        <div class="col-lg-5">
+        <div class="col-md-5">
             <div class="black-line"></div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-md-2">
             <div id="truck-logo" class="text-center">
-                <h4>ServerSuperStore</h4>
+                <img src="https://d3upwncywg1ue2.cloudfront.net/SPF/images/truck.png" alt="" class="img-responsive">
             </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-md-5">
             <div class="black-line"></div>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-offset-1 col-lg-10">
+        <div class="col-md-offset-1 col-md-10">
             <div id="footer-content">
                 <div class="row">
                     <!-- Left side content  -->
-                    <div id="left-foot" class="col-lg-4">
+                    <div id="left-foot" class="col-md-4">
                         <div class="text-center cert-logos">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <img src="http://d3upwncywg1ue2.cloudfront.net/SPF/images/vmwarecp.png" alt="vmware certified" class="cert-logos">
+                                <div class="col-md-6">
+                                    <img src="https://d3upwncywg1ue2.cloudfront.net/SPF/images/vmwarecp.png" alt="vmware certified" class="cert-logos">
                                 </div>
-                                <div class="col-lg-6">
-                                    <img src="http://d3upwncywg1ue2.cloudfront.net/SPF/images/MS-Reg-Refurb.jpg" alt="vmware certified" class="cert-logos">
+                                <div class="col-md-6">
+                                    <img src="https://d3upwncywg1ue2.cloudfront.net/SPF/images/MS-Reg-Refurb.jpg" alt="vmware certified" class="cert-logos">
                                 </div>
                             </div>
                         </div>
@@ -1067,24 +1184,24 @@ tr:nth-child(even) {
                     <!-- End Left side content  -->
 
                     <!-- Center Content -->
-                    <div id="center-foot" class="col-lg-4">
+                    <div id="center-foot" class="col-md-4">
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-md-12">
                             </div>
                         </div>
                         
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-md-12">
                                 <div class="text-center" id="slogan">
-                                    <img src="" alt="">
+                                    <img src="https://d3upwncywg1ue2.cloudfront.net/SPF/images/slogan.png" alt="">
                                 </div>
                             </div>
                         </div>
                         
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-md-12">
                                 <div class="text-center">
-                                <div id="payment">
+                                    <div id="payment">
     <div id="paypal" class="small-card"></div>
     <div id="visa" class="small-card"></div>
     <div id="master-card" class="small-card"></div>
@@ -1098,7 +1215,7 @@ tr:nth-child(even) {
                     <!-- End Center Content -->
 
                     <!-- Right side content  -->
-                    <div id="right-foot" class="col-lg-4">
+                    <div id="right-foot" class="col-md-4">
                         <div class="text-center h4">
                             <strong>Our Goal is 100% Satisfaction!</strong>
                         </div>
@@ -1108,18 +1225,19 @@ tr:nth-child(even) {
             </div>
         </div>
     </div>
+    <!--#################-->
+    <!-- Meta Info Block -->
+    <!--#################-->
+    <div class="row">
+        <div class="col-md-12">
+            <div id="meta-data">[[ItemInfo]] [[QuoteID_If]]</div>
+        </div>
+    </div>
+    <!-- End Meta Info Block -->
 </div>
         </div>
     </div>
         <!-- End Footer Content Block -->
 
-        <!--#################-->
-        <!-- Meta Info Block -->
-        <!--#################-->
-    <div class="row">
-        <div class="col-lg-12">
-            <div id="meta-data">[[ItemInfo]] [[QuoteID_If]]</div>
-        </div>
-    </div>
-    <!-- End Meta Info Block -->
+        
 </div>
