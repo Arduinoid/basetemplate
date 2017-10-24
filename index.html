@@ -139,21 +139,28 @@ input {
 #call {
     background: url('https://s3.amazonaws.com/savemyserver/SPF/images/shared_linkover.png');
     float: right;
-    clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%);
-
-    /*   padding: 10px 40px 0px 5px; */
     text-align: right;
     height: 43px;
     width: 100%;
-    /*   display: inline-block; */
 }
+
 #call p {
     color: white;
     font-size: 1.5em;
     letter-spacing: 0.03em;
     margin: 8px 27px;
 }
+
+/* this creates a corner cut off look */
+
+#corner {
+    content: '';
+    position: absolute;
+    border-bottom: 43px solid transparent;
+    border-left: 40px solid white;
+    width: 0;
+}
+
 #greeting {
     float: right;
     letter-spacing: 0.02px;
@@ -204,14 +211,22 @@ input {
 /* Side Bar Styles */
 /*******************/
 
+#store-corner {
+    content: '';
+    border-top: 30px solid transparent;
+    border-right: 18px solid white;
+    width: 0;
+    float: right;
+}
 
 .boxtitle {
+    float: left;
     background: url("https://d3upwncywg1ue2.cloudfront.net/SPF/images/shared_linktitle.png");
     color: #fff;
     height: 30px;
+    margin-right: -18px;
     padding: 1px 10px;
-    clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+    width: 100%;
 }
 
 .sub-cat {
@@ -746,6 +761,7 @@ tr:nth-child(even) {
     </div>
     <div class="row">
         <div class="col-md-12">
+            <div id="corner"></div>
             <div id="call">
                 <p>Our Goal is 100% Satisfaction!</p>
             </div>
@@ -781,6 +797,7 @@ tr:nth-child(even) {
                 <div class="col-md-12">
                     
 <div class="boxtitle">Store Categories</div>
+<div id="store-corner"></div>
 <div id="categories">
     <div class="boxlinks">
         
