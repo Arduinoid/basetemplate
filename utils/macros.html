@@ -1,17 +1,10 @@
-{%- macro recursive_categories(categories) %}
-<div class="boxtitle">Store Categories</div>
-<div id="store-corner"></div>
-<div id="categories">
-    <div class="boxlinks">
-        {%- for category in categories %}
-        <a href="{{ category.link }}" target="_blank">{{ category.name }}</a>
-            {%- if category.sub == 'foo' %}
-            <div class="sub-cat">
-                <p>TEST</p>
-                {{ recursive_categories(category.sub) }}
-            </div>
-            {%- endif %}
-        {%- endfor %}
-    </div>
-</div>
+{% macro recursive_categories(categories) %}
+    {%- for category in categories %}
+    <a href="{{ category.link }}" target="_blank">{{ category.name }}</a>
+        {%- if category.sub %}
+        <div class="sub-cat">
+            {{- recursive_categories(category.sub)|indent(8) }}
+        </div>
+        {%- endif %}
+    {%- endfor %}
 {%- endmacro -%}
