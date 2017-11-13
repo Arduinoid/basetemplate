@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Cooling Components",
+        "link": "//stores.ebay.com/techbenchsystems/Cooling-Components-/_i.html?_fsub=11696363015",
+        "sub": [
+            {
+                "name": "Heatsinks",
+                "link": "//stores.ebay.com/techbenchsystems/Heatsinks-/_i.html?_fsub=11716398015"
+            }
+        ]
+    },
+    {
+        "name": "Server Rails",
+        "link": "//stores.ebay.com/techbenchsystems/Server-Rails-/_i.html?_fsub=11696365015",
+        "sub": []
+    },
+    {
+        "name": "Networking",
+        "link": "//stores.ebay.com/techbenchsystems/Networking-/_i.html?_fsub=11716365015",
+        "sub": [
+            {
+                "name": "Network Cards",
+                "link": "//stores.ebay.com/techbenchsystems/Network-Cards-/_i.html?_fsub=11716472015"
+            }
+        ]
+    },
+    {
+        "name": "Storage/Media",
+        "link": "//stores.ebay.com/techbenchsystems/Storage-Media-/_i.html?_fsub=11716430015",
+        "sub": [
+            {
+                "name": "Trays",
+                "link": "//stores.ebay.com/techbenchsystems/Trays-/_i.html?_fsub=11716516015"
+            }
+        ]
+    },
+    {
+        "name": "Server Components",
+        "link": "//stores.ebay.com/techbenchsystems/Server-Components-/_i.html?_fsub=11716473015",
+        "sub": [
+            {
+                "name": "Risers",
+                "link": "//stores.ebay.com/techbenchsystems/Risers-/_i.html?_fsub=11716489015"
+            },
+            {
+                "name": "Mother Boards",
+                "link": "//stores.ebay.com/techbenchsystems/Mother-Boards-/_i.html?_fsub=11716490015"
+            },
+            {
+                "name": "Graphic Cards",
+                "link": "//stores.ebay.com/techbenchsystems/Graphic-Cards-/_i.html?_fsub=11716491015"
+            },
+            {
+                "name": "Raid Cards",
+                "link": "//stores.ebay.com/techbenchsystems/Raid-Cards-/_i.html?_fsub=11716492015"
+            },
+            {
+                "name": "Chassis",
+                "link": "//stores.ebay.com/techbenchsystems/Chassis-/_i.html?_fsub=11716493015"
+            },
+            {
+                "name": "Ear Racks",
+                "link": "//stores.ebay.com/techbenchsystems/Ear-Racks-/_i.html?_fsub=11716494015"
+            },
+            {
+                "name": "Interface Cables",
+                "link": "//stores.ebay.com/techbenchsystems/Interface-Cables-/_i.html?_fsub=11716515015"
+            },
+            {
+                "name": "Bezels",
+                "link": "//stores.ebay.com/techbenchsystems/Bezels-/_i.html?_fsub=11716518015"
+            },
+        ]
+    },
+    {
+        "name": "Others",
+        "link": "//stores.ebay.com/techbenchsystems/Other-/_i.html?_fsub=1",
+        "sub": []
+    }
+]

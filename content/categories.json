@@ -1,172 +1,80 @@
 [
     {
-        "name":"Server - Hard Drives",
-        "link":"https://stores.ebay.com/ServerPartsFast/Server-Hard-Drives-/_i.html?_fsub=7282067010",
+        "name": "Cooling Components",
+        "link": "https://stores.ebay.com/Recover-IT-Recycling/Cooling-Components-/_i.html?_fsub=11696363015",
         "sub": [
             {
-                "name":"SAS - 2.5\" Hard Drives",
-                "link":"https://stores.ebay.com/ServerPartsFast/SAS-2-5-Hard-Drives-/_i.html?_fsub=19417892010"
-            },
-            {
-                "name":"SAS - 3.5\" Hard Drives",
-                "link":"https://stores.ebay.com/ServerPartsFast/SAS-3-5-Hard-Drives-/_i.html?_fsub=19417893010"
-            },
-            {
-                "name":"SATA - 3.5\" Hard Drives",
-                "link":"https://stores.ebay.com/ServerPartsFast/SATA-3-5-Hard-Drives-/_i.html?_fsub=19417895010"
-            },
-            {
-                "name":"SCSI Drives",
-                "link":"https://stores.ebay.com/ServerPartsFast/SCSI-Drives-/_i.html?_fsub=7282273010"
-            },
-            {
-                "name":"Misc Drives",
-                "link":"https://stores.ebay.com/ServerPartsFast/Misc-Drives-/_i.html?_fsub=7283355010"
+                "name": "Heatsinks",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Heatsinks-/_i.html?_fsub=11716398015"
             }
         ]
     },
     {
-        "name":"Server - Memory",
-        "link":"https://stores.ebay.com/ServerPartsFast/Server-Memory-/_i.html?_fsub=7282068010",
+        "name": "Server Rails",
+        "link": "https://stores.ebay.com/Recover-IT-Recycling/Server-Rails-/_i.html?_fsub=11696365015",
+        "sub": []
+    },
+    {
+        "name": "Networking",
+        "link": "https://stores.ebay.com/Recover-IT-Recycling/Networking-/_i.html?_fsub=11716365015",
         "sub": [
             {
-                "name":"Memory - PC2-3200R",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC2-3200R-/_i.html?_fsub=19354454010"
-            },
-            {
-                "name":"Memory - PC2-4200F",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC2-4200F-/_i.html?_fsub=7282115010"
-            },
-            {
-                "name":"Memory - PC2-4200R",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC2-4200R-/_i.html?_fsub=7282134010"
-            },
-            {
-                "name":"Memory - PC2-5300F",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC2-5300F-/_i.html?_fsub=7282116010"
-            },
-            {
-                "name":"Memory - PC2-5300P",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC2-5300P-/_i.html?_fsub=19354453010"
-            },
-            {
-                "name":"Memory - PC2-6400P",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC2-6400P-/_i.html?_fsub=19354455010"
-            },
-            {
-                "name":"Memory - PC3-8500E",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC3-8500E-/_i.html?_fsub=7283360010"
-            },
-            {
-                "name":"Memory - PC3-8500R",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC3-8500R-/_i.html?_fsub=7375734010"
-            },
-            {
-                "name":"Memory - PC3-10600E",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC3-10600E-/_i.html?_fsub=7283362010"
-            },
-            {
-                "name":"Memory - PC3-10600R",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC3-10600R-/_i.html?_fsub=7283361010"
-            },
-            {
-                "name":"Memory - PC3-12800R",
-                "link":"https://stores.ebay.com/ServerPartsFast/Memory-PC3-12800R-/_i.html?_fsub=19354456010"
-            },
-            {
-                "name":"Server Memory - Misc",
-                "link":"https://stores.ebay.com/ServerPartsFast/Server-Memory-Misc-/_i.html?_fsub=7707869010"
+                "name": "Network Cards",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Network-Cards-/_i.html?_fsub=11716472015"
             }
         ]
     },
     {
-        "name":"Server - Processors",
-        "link":"https://stores.ebay.com/ServerPartsFast/Server-Processors-/_i.html?_fsub=7282072010",
-        "sub": []
+        "name": "Storage/Media",
+        "link": "https://stores.ebay.com/Recover-IT-Recycling/Storage-Media-/_i.html?_fsub=11716430015",
+        "sub": [
+            {
+                "name": "Trays",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Trays-/_i.html?_fsub=11716516015"
+            }
+        ]
     },
     {
-        "name":"Dell Server Parts",
-        "link":"https://stores.ebay.com/ServerPartsFast/Dell-Server-Parts-/_i.html?_fsub=7281926010",
-        "sub": []
+        "name": "Server Components",
+        "link": "https://stores.ebay.com/Recover-IT-Recycling/Server-Components-/_i.html?_fsub=11716473015",
+        "sub": [
+            {
+                "name": "Risers",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Risers-/_i.html?_fsub=11716489015"
+            },
+            {
+                "name": "Mother Boards",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Mother-Boards-/_i.html?_fsub=11716490015"
+            },
+            {
+                "name": "Graphic Cards",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Graphic-Cards-/_i.html?_fsub=11716491015"
+            },
+            {
+                "name": "Raid Cards",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Raid-Cards-/_i.html?_fsub=11716492015"
+            },
+            {
+                "name": "Chassis",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Chassis-/_i.html?_fsub=11716493015"
+            },
+            {
+                "name": "Ear Racks",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Ear-Racks-/_i.html?_fsub=11716494015"
+            },
+            {
+                "name": "Interface Cables",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Interface-Cables-/_i.html?_fsub=11716515015"
+            },
+            {
+                "name": "Bezels",
+                "link": "https://stores.ebay.com/Recover-IT-Recycling/Bezels-/_i.html?_fsub=11716518015"
+            }
+        ]
     },
     {
-        "name":"HP Server Parts",
-        "link":"https://stores.ebay.com/ServerPartsFast/HP-Server-Parts-/_i.html?_fsub=7281949010",
-        "sub": []
-    },
-    {
-        "name":"Accessories",
-        "link":"https://stores.ebay.com/ServerPartsFast/Accessories-/_i.html?_fsub=7282029010",
-        "sub": []
-    },
-    {
-        "name":"Backplanes",
-        "link":"https://stores.ebay.com/ServerPartsFast/Backplanes-/_i.html?_fsub=13618240010",
-        "sub": []
-    },
-    {
-        "name":"Batteries",
-        "link":"https://stores.ebay.com/ServerPartsFast/Batteries-/_i.html?_fsub=13788761010",
-        "sub": []
-    },
-    {
-        "name":"Cards and Controllers",
-        "link":"https://stores.ebay.com/ServerPartsFast/Cards-and-Controllers-/_i.html?_fsub=7282066010",
-        "sub": []
-    },
-    {
-        "name":"Disk Array Components",
-        "link":"https://stores.ebay.com/ServerPartsFast/Disk-Array-Components-/_i.html?_fsub=13782906010",
-        "sub": []
-    },
-    {
-        "name":"Heatsinks and Cooling",
-        "link":"https://stores.ebay.com/ServerPartsFast/Heatsinks-and-Cooling-/_i.html?_fsub=13647595010",
-        "sub": []
-    },
-    {
-        "name":"Motherboard",
-        "link":"https://stores.ebay.com/ServerPartsFast/Motherboards-/_i.html?_fsub=7282070010",
-        "sub": []
-    },
-    {
-        "name":"Optical Drives",
-        "link":"https://stores.ebay.com/ServerPartsFast/Optical-Drives-/_i.html?_fsub=7282069010",
-        "sub": []
-    },
-    {
-        "name":"Power Cords and PDUs",
-        "link":"https://stores.ebay.com/ServerPartsFast/Power-Cords-and-PDUs-/_i.html?_fsub=7282065010",
-        "sub": []
-    },
-    {
-        "name":"Power Supplies",
-        "link":"https://stores.ebay.com/ServerPartsFast/Power-Supplies-/_i.html?_fsub=7282071010",
-        "sub": []
-    },
-    {
-        "name":"Rack & Rail Kits",
-        "link":"https://stores.ebay.com/ServerPartsFast/Racks-Rail-Kits-/_i.html?_fsub=7282073010",
-        "sub": []
-    },
-    {
-        "name":"SD Modules",
-        "link":"https://stores.ebay.com/ServerPartsFast/SD-Modules-/_i.html?_fsub=13647301010",
-        "sub": []
-    },
-    {
-        "name":"Switches and Routers",
-        "link":"https://stores.ebay.com/ServerPartsFast/Switches-and-Routers-/_i.html?_fsub=7282074010",
-        "sub": []
-    },
-    {
-        "name":"Tape and Storage",
-        "link":"https://stores.ebay.com/ServerPartsFast/Tape-and-Storage-/_i.html?_fsub=7282075010",
-        "sub": []
-    },
-    {
-        "name":"Other",
-        "link":"https://stores.ebay.com/ServerPartsFast/Other-/_i.html?_fsub=1",
+        "name": "Others",
+        "link": "https://stores.ebay.com/Recover-IT-Recycling/Other-/_i.html?_fsub=1",
         "sub": []
     }
 ]

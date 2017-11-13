@@ -16,7 +16,9 @@ def get_lines_from_file(text_file):
 def get_json_data_from_file(json_file):
    
     with open(json_file, 'r') as f:
-        json_data = json.load(f)
-
-    return json_data
+        try:
+            json_data = json.load(f)
+            return json_data
+        except:
+            print('Invalid JSON in file {}'.format(json_file))
 
